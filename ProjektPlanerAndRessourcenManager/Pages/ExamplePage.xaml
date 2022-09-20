@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProjektPlanerAndRessourcenManager.Pages.ExamplePage"
+             Title="">
+    <VerticalStackLayout>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <!--<StackLayout> //Maybe Main Approaach to nav if FlyoutItems get to strict/not customizable enough ...for now stick with standard
+                <Button Text="Main Page" Clicked="GotoMainPage"/>
+                <Button Text="Example Page" Grid.Column="0"/>
+                <Button Text="Example Page" Grid.Column="0"/>
+            </StackLayout>-->
+            <Rectangle BackgroundColor="AntiqueWhite" Grid.Column="1"/>
+            <Rectangle BackgroundColor="Azure" Grid.Column="2"/>
+            <Rectangle BackgroundColor="DarkGoldenrod" Grid.Column="3"/>
+            <Rectangle BackgroundColor="DarkOrchid" Grid.Column="4"/>
+            <Rectangle BackgroundColor="DimGrey" Grid.Column="5"/>
+            <Rectangle BackgroundColor="Navy" Grid.Column="6"/>
+            <Rectangle BackgroundColor="HotPink" Grid.Column="7"/>
+            
+            
+            <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center"
+            Grid.Column="3" Grid.ColumnSpan="3">
+
+                <Image
+                Source="dotnet_bot.png"
+                SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                HeightRequest="100"
+                HorizontalOptions="Center" />
+
+                <Entry x:Name="newProject"
+                   Placeholder="New Project"/>
+
+                <Button Text="Add Person" Clicked="OnAddNewProjectButtonClicked"/>
+
+                <Label x:Name="statusMessage"/>
+                <Button Text="Gib Pfad" Clicked="OnGibPfad"/>
+                <Button Text="Gib Zeit" Clicked="OnTime"/>
+                <Button Text="Get All People" Clicked="OnGetButtonClicked" />
+
+
+                <CollectionView x:Name="List" >
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+
+                                <Label Text="{Binding Id}" />
+                                <Label Grid.Column="1" Text="{Binding Name}" />
+                                <Label Grid.Column="2" Text="{Binding DateTime}" />
+                                <Label Grid.Column="3" Text="{Binding Version}" />
+                            </Grid>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+
+                <!--<Picker x:Name="picker" Title="Select"></Picker>-->
+                <!--<Picker x:Name="picker" Title="Select a monkey">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        
+                        <x:String>Baboon</x:String>
+                        <x:String>Capuchin Monkey</x:String>
+                        <x:String>Blue Monkey</x:String>
+                        <x:String>Squirrel Monkey</x:String>
+                        <x:String>Golden Lion Tamarin</x:String>
+                        <x:String>Howler Monkey</x:String>
+                        <x:String>Japanese Macaque</x:String>
+                        
+                    </x:Array>
+                    
+                </Picker.ItemsSource>
+            </Picker>-->
+
+
+            </VerticalStackLayout>
+        </Grid>
+       
+    </VerticalStackLayout>
+</ContentPage>

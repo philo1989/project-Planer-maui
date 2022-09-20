@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProjektPlanerAndRessourcenManager.MainPage">
+
+    <ScrollView Margin="25" BackgroundColor="NavajoWhite" x:Name="MainView">
+
+        <Grid RowDefinitions="15,200,*,*,*,*" ColumnDefinitions="*,*,*,*,*,*,*,*,*,*,*" RowSpacing="5" ColumnSpacing="5"><!--11 Columns-->
+            <!--<Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>--><!--<Grid.RowDefinitions>
+                <RowDefinition Height="200"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>-->
+            
+            
+            <Rectangle BackgroundColor="Plum" Grid.Column="0" />
+            <Rectangle BackgroundColor="AntiqueWhite" Grid.Column="1" />
+            <Rectangle BackgroundColor="Azure" Grid.Column="2" />
+            
+            <Rectangle BackgroundColor="Firebrick" Grid.Column="8" Grid.Row="5" Grid.RowSpan="2"/>
+            <Rectangle BackgroundColor="DimGrey" Grid.Column="0" Grid.Row="2" />
+            <Rectangle BackgroundColor="LightPink" Grid.Column="0" Grid.Row="3"/>
+            
+            <Rectangle BackgroundColor="Azure" Grid.Column="1" Grid.Row="2"/>
+            <Rectangle BackgroundColor="AliceBlue" Grid.Column="1" Grid.Row="3"/>
+            <Rectangle BackgroundColor="AliceBlue" Grid.Column="10" Grid.Row="1"/>            
+            <Rectangle BackgroundColor="AliceBlue" Grid.Column="10" Grid.Row="5"/>            
+            
+            <Rectangle BackgroundColor="Azure" Grid.Column="2" Grid.Row="3"/>
+            <Rectangle BackgroundColor="DarkGoldenrod" Grid.Column="3" Grid.Row="1"/>
+            <Rectangle BackgroundColor="DarkGoldenrod" Grid.Column="3" Grid.Row="4"/>
+            <Rectangle BackgroundColor="DarkOrchid" Grid.Column="4" Grid.RowSpan="2"/>
+            <Rectangle BackgroundColor="DarkOrchid" Grid.Column="4" Grid.Row="3"/>
+            <Rectangle BackgroundColor="DimGrey" Grid.Column="5"/>
+            <Rectangle BackgroundColor="DimGrey" Grid.Column="5" Grid.Row="2"/>
+            <Rectangle BackgroundColor="Navy" Grid.Column="6" />
+            <Rectangle BackgroundColor="Navy" Grid.Column="8" />
+            <Rectangle BackgroundColor="HotPink" Grid.Column="7"/>
+            <Rectangle BackgroundColor="HotPink" Grid.Column="9" Grid.Row="2" Grid.RowSpan="3"/>
+            
+            <StackLayout Grid.Column="3" Grid.Row="1">
+            <Button Text="Example Page" Clicked="GotoExPage" />
+            </StackLayout>
+            
+            
+            <Label x:Name="ProjectLabel" Text="" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2" VerticalOptions="Center" />
+
+            <StackLayout Grid.Column="1" Grid.Row="2" Grid.ColumnSpan="2" VerticalOptions="Center">
+            <Label  Text="dotnet publish -f net6.0-windows10.0.19041.0 -c Release -p:WindowsPackageType=None" BackgroundColor="Honeydew"   VerticalOptions="Center"/>
+            <Label  Text="J:\NoNo\source\repos\ProjektPlanerAndRessourcenManager\bin\Release\net6.0-windows10.0.19041.0\win10-x64" BackgroundColor="MediumVioletRed"/>
+            </StackLayout>
+            
+            <CollectionView x:Name="ProjectOverview" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="1" BackgroundColor="AntiqueWhite">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid RowDefinitions="*" ColumnDefinitions="*,*" Padding="5">
+
+                            <Label Text="{Binding Name}" Grid.Column="0"/>
+                            <Label Text="{Binding ProjectDescription}" Grid.Column="1"/>
+
+                            <!--<Label Text="{Binding OpenTasks}" Grid.Column="5" />
+                                            <Label Text="{Binding ClosedTasks}" Grid.Column="6"/>
+                                            <Label Text="{Binding AllTasks}" Grid.Column="8"/>
+                                            <Label Text="{Binding DateTime}" Grid.Column="9"/>
+                                            <Label Text="{Binding SpendTime}" Grid.Column="10"/>-->
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+
+            <!--Start EnterNewTask-->
+            
+                <Grid ColumnDefinitions="10,*" RowDefinitions="5,*,*,5" BackgroundColor="MediumVioletRed" Padding="0" Grid.Column="5" Grid.ColumnSpan="6" Grid.Row="1" HorizontalOptions="Fill" VerticalOptions="Center" Margin="15">
+                    <HorizontalStackLayout Grid.Row="1" Grid.Column="1">
+                        <Label Text="Enter New Task" TextColor="FloralWhite" TextTransform="Lowercase" FontFamily="OpenSans-Semibold.ttf" Padding="0"/>
+                        
+                    </HorizontalStackLayout>
+                    <HorizontalStackLayout Grid.Row="2" Grid.Column="1">
+                        <ImageButton Source="not_started.png" Clicked="AddNewTask" BackgroundColor="#00000000" MaximumHeightRequest="48" VerticalOptions="Start"/>
+                        <!--<ImageButton Source="not_started.png" BackgroundColor="Transparent" MaximumHeightRequest="48" VerticalOptions="Start"/>-->
+                        <Editor x:Name="TaskDescription" Placeholder="TaskDescription" PlaceholderColor="BlueViolet" MaximumHeightRequest="36"></Editor>
+                    
+                        <VerticalStackLayout>
+                            <Picker x:Name="projectPicker" BackgroundColor="AntiqueWhite" Opacity="1"  MaximumHeightRequest="36"></Picker>
+                            <Picker x:Name="tagPicker" BackgroundColor="AntiqueWhite">
+                                <Picker.ItemsSource>
+                                    <x:Array Type="{x:Type x:String}">
+                                        <x:String>select Tags!</x:String>
+                                        <x:String>Capuchin Monkey</x:String>
+                                        <x:String>Blue Monkey</x:String>
+                                        <x:String>Squirrel Monkey</x:String>
+                                        <x:String>Golden Lion Tamarin</x:String>
+                                        <x:String>Howler Monkey</x:String>
+                                        <x:String>Japanese Macaque</x:String>
+                                    </x:Array>
+                                </Picker.ItemsSource>
+                            </Picker>
+                        </VerticalStackLayout>
+                        <Picker x:Name="toggleRecurringTask" BackgroundColor="AntiqueWhite" MaximumHeightRequest="36">
+                            <Picker.ItemsSource>
+                                <x:Array Type="{x:Type x:String}">
+                                    <x:String>recurring?</x:String>
+                                    <x:String>Hell Yeah</x:String>
+                                    <x:String>Gott Sei Dank Nicht</x:String>
+                                    
+                                </x:Array>
+                            </Picker.ItemsSource>
+                        </Picker>
+                   
+                    <!--<RadioButton x:Name="toggleTags" GroupName="Tags"/>-->
+                        <!--<RadioButton x:Name="toggleRepeatTask" GroupName="Repeat" Content="recurring Task ?"/>-->
+                        
+                    </HorizontalStackLayout>
+                </Grid>
+                <!--End Add New Task-->
+            <TableView Intent="Form" Grid.Column="5" Grid.ColumnSpan="6" Grid.Row="2" Grid.RowSpan="4" VerticalOptions="StartAndExpand">
+                <TableRoot>
+                    <!--<TableSection Title="Enter New Task" TextColor="FloralWhite">
+                        <ViewCell>
+                            <StackLayout>
+                                <Grid RowDefinitions="*,125" ColumnDefinitions="48,*,*,*,*,*,48" BackgroundColor="AntiqueWhite" Padding="5">
+                                    <Label x:Name="Date" Text="dd.mm.yyyy Day" Grid.ColumnSpan="2" HorizontalOptions="Start" VerticalOptions="CenterAndExpand"/>
+
+                                    --><!--Clicked="OnStartTaskClicked"--><!--
+                                    <ImageButton Source="not_started.png" BackgroundColor="#1114FF" MaximumHeightRequest="48"  Grid.Row="1" VerticalOptions="Start"/>
+                                    --><!--<Editor x:Name="124" Placeholder="TaskDescription" PlaceholderColor="BlueViolet"  Grid.Column="1" Grid.Row="1" MinimumHeightRequest="125"></Editor>
+                                    <Picker x:Name="picker"  Grid.Column="2" Grid.Row="1"></Picker>-->
+                                    <!--<Label Text="Start Time" Grid.Column="3" Grid.Row="0"/>
+                                                <Label Text="EndTime" Grid.Column="4" Grid.Row="1"/>
+                                                <Label Text="CompletionTime" Grid.Column="5" Grid.Row="1"/>--><!--
+                                    <ImageButton Source="edit_note.png" BackgroundColor="LightSeaGreen" MaximumHeightRequest="48" Grid.Column="6" Grid.Row="1" VerticalOptions="Start"/>
+                                </Grid>
+
+                            </StackLayout>
+                        </ViewCell>
+
+                    </TableSection>-->
+
+                    <TableSection Title="Tasks" x:Name="TaskRecord">
+                        <ViewCell>
+                            <StackLayout >
+                                <Grid RowDefinitions="*" ColumnDefinitions="60,*,*,*,*,*,*,48" BackgroundColor="AntiqueWhite" Padding="5" ColumnSpacing="10" RowSpacing="10">
+
+
+                                    <Label Text="Restart" Grid.Column="0"></Label>
+                                    <!--<Label Text="Task Id" Grid.Column="1" ></Label>
+                                    <Label Text="Project Id"   Grid.Column="2"></Label>-->
+                                    <Label Text="Project Name" Grid.Column="1" />
+                                    <Label Text="Task Description" Grid.Column="2"/>
+                                    <Label Text="Status" Grid.Column="3" />
+                                    <Label Text="Erledigt?" Grid.Column="4"/>
+                                    <Label Text="Edit" Grid.Column="5"/>
+
+                                </Grid>
+
+                                <CollectionView x:Name="ProjectView" Grid.Column="1" Grid.ColumnSpan="4" Grid.Row="1" BackgroundColor="AntiqueWhite">
+                                    <CollectionView.ItemTemplate>
+                                        <DataTemplate>
+                                            <Grid RowDefinitions="48" ColumnDefinitions="60,*,*,*,*,*,*,48" Padding="5" ColumnSpacing="10" RowSpacing="10">
+
+                                                <ImageButton Source="not_started.png" BackgroundColor="MediumVioletRed" MaximumHeightRequest="38" MaximumWidthRequest="38" Clicked="OnRestartTaskClicked" Grid.Column="0" HorizontalOptions="Start"/>
+                                                <!--<Label Text="{Binding Id}" Grid.Column="1"/>
+                                                <Label Text="{Binding ProjectID}" Grid.Column="2"/>-->
+                                                <Label Text="{Binding ProjectName}" Grid.Column="1"/>
+                                                <Label Text="{Binding Description}" Grid.Column="2"/>
+                                                <Label Text="{Binding Status}" Grid.Column="3"/>
+                                                <Label Text="{Binding IsDone}" Grid.Column="4"/>
+
+                                                <!--<Label Text="{Binding OpenTasks}" Grid.Column="5" />
+                                            <Label Text="{Binding ClosedTasks}" Grid.Column="6"/>
+                                            <Label Text="{Binding AllTasks}" Grid.Column="8"/>
+                                            <Label Text="{Binding DateTime}" Grid.Column="9"/>
+                                            <Label Text="{Binding SpendTime}" Grid.Column="10"/>-->
+                                                <ImageButton Source="edit_note.png" BackgroundColor="MediumVioletRed" MaximumHeightRequest="38" MaximumWidthRequest="38" Grid.Column="5" />
+
+                                            </Grid>
+                                        </DataTemplate>
+                                    </CollectionView.ItemTemplate>
+                                </CollectionView>
+                            </StackLayout>
+                        </ViewCell>
+                    </TableSection>
+                </TableRoot>
+            </TableView>
+
+
+            <!--<ImageButton Source="add_circle.png" Clicked="AddNewTask" VerticalOptions="Center" HorizontalOptions="Center" HeightRequest="50" BackgroundColor="Aqua"/>
+                        <Button Text="Start Task" Grid.Column="1" />
+                <Label  Text="No Tasks available create new one Please" Grid.Column="2"/>
+                <Label  Text="Running Time" Grid.Column="3"/>-->
+                        
+                    <!--</Grid>-->
+                    <!--<Image Source="starfield.png" Aspect="AspectFill" Grid.RowSpan="3" Grid.ColumnSpan="8" />-->
+                <!--</HorizontalStackLayout>-->
+            <!--</VerticalStackLayout>-->
+
+            
+        </Grid>
+        
+    </ScrollView>
+
+</ContentPage>

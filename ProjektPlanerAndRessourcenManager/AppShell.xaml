@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="ProjektPlanerAndRessourcenManager.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:ProjektPlanerAndRessourcenManager"
+    xmlns:pages="clr-namespace:ProjektPlanerAndRessourcenManager.Pages"
+    Shell.FlyoutBehavior="Locked"
+    FlyoutWidth="135"
+    >
+
+    <!--<ShellContent
+        Title=""
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" />-->
+
+    <Shell.FlyoutHeader>
+        <Grid HeightRequest="50" BackgroundColor="DarkSlateBlue" >
+            <Label Text="HEADER" HorizontalOptions="CenterAndExpand" VerticalOptions="Center"/>
+        </Grid>
+    </Shell.FlyoutHeader>
+    
+    <FlyoutItem Title="MainPage" Icon="moon.png">
+        <ShellContent
+            Title=""
+            ContentTemplate="{DataTemplate local:MainPage}"
+            Route="MainPage" />
+    </FlyoutItem>
+    
+    <FlyoutItem Title="Projects" Icon="starfield.png">
+        <ShellContent Icon="moon.png"
+            ContentTemplate="{DataTemplate pages:ProjectPage}" />
+    </FlyoutItem>
+    
+    <FlyoutItem Title="Time" Icon="question.png">
+        <ShellContent
+            ContentTemplate="{DataTemplate pages:TimeRecord}" 
+            Route="TimeRecord"/>
+    </FlyoutItem>
+    
+    <FlyoutItem Title="Example" Icon="question.png">
+        <ShellContent
+            ContentTemplate="{DataTemplate pages:ExamplePage}" 
+            Route="ExamplePage"/>
+    </FlyoutItem>
+
+
+    <!--<FlyoutItem Title="About" Icon="question.png">
+        <ShellContent Title="Daylight" Icon="sun.png"
+            ContentTemplate="{DataTemplate pages:ExamplePage}" 
+            Route="ExamplePage"/>
+    </FlyoutItem>-->
+</Shell>

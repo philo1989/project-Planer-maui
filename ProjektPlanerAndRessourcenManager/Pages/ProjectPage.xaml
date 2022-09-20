@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProjektPlanerAndRessourcenManager.Pages.ProjectPage"
+             Title="">
+    
+    <ScrollView  Margin="10" BackgroundColor="Thistle" VerticalScrollBarVisibility="Always">
+        <Grid RowDefinitions="25,*,*,*,*,*,*,*" ColumnDefinitions="*,200,*,*,*,*,*,*" Padding="5">
+            
+            <Grid Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="6" Grid.RowSpan="3" BackgroundColor="DarkOrchid" Padding="5" VerticalOptions="Start"
+                  RowDefinitions="40,80,60,*" ColumnDefinitions="*,*,*">
+                <Entry x:Name="newProjectName" Placeholder="New Project Name" PlaceholderColor="Black" MinimumWidthRequest="200" Grid.Column="0" Grid.Row="0"/>
+                <Editor x:Name="newProjectDescription" Placeholder="New Project Description" PlaceholderColor="Black"  Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="0" Grid.RowSpan="3"/>
+                <Button Text="Add New Project" Clicked="OnAddNewProjectButtonClicked" Grid.Column="0" Grid.Row="2"/>
+
+            <Label x:Name="statusMessage" Text="Text" Grid.Column="0" Grid.Row="4"/>
+            </Grid>
+            <CollectionView x:Name="ProjectView" Grid.Column="1" Grid.ColumnSpan="6" Grid.Row="6" BackgroundColor="AntiqueWhite" VerticalOptions="Start">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid RowDefinitions="*,*" ColumnDefinitions="*,*,*,*,*">
+                           
+                            <Label Text="{Binding Id}" Grid.Column="0"/>
+                            <Label Text="{Binding Name}" Grid.Column="1"/>
+                            <Label Text="{Binding Version}" Grid.Column="2"/>
+                            <Label Text="{Binding ProjectDescription}" Grid.Column="3"/>
+                            <Label Text="{Binding Customer}" Grid.Column="4"/>
+                            
+                            <Label Text="{Binding OpenTasks}" Grid.Column="0" Grid.Row="1"/>
+                            <Label Text="{Binding ClosedTasks}" Grid.Column="1" Grid.Row="1"/>
+                            <Label Text="{Binding AllTasks}" Grid.Column="2" Grid.Row="1"/>
+                            <Label Text="{Binding DateTime}" Grid.Column="3" Grid.Row="1"/>
+                            <Label Text="{Binding SpendTime}" Grid.Column="4" Grid.Row="1"/>
+                            
+                            
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+            
+
+        </Grid>
+    </ScrollView>
+</ContentPage>

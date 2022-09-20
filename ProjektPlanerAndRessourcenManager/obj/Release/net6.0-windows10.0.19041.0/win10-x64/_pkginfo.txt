@@ -1,0 +1,1 @@
+J:\NoNo\source\repos\ProjektPlanerAndRessourcenManager\bin\Release\net6.0-windows10.0.19041.0\win10-x64\AppPackages\ProjektPlanerAndRessourcenManager_0.0.1.0_Test\ProjektPlanerAndRessourcenManager_0.0.1.0_x64.msix

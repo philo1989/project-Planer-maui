@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProjektPlanerAndRessourcenManager.Pages.TimeRecord"
+             Title="">
+    <ScrollView Margin="10" BackgroundColor="Thistle">
+
+        <TableView Intent="Form">
+            <TableRoot>
+                <TableSection Title="Enter New Task" TextColor="FloralWhite">
+                    <ViewCell>
+                        <StackLayout>
+                        <Grid RowDefinitions="*,125" ColumnDefinitions="48,600,*,*,*,*,48" BackgroundColor="AntiqueWhite" Padding="5">
+                            <Label x:Name="Date" Text="dd.mm.yyyy Day" Grid.ColumnSpan="2" HorizontalOptions="Start" VerticalOptions="CenterAndExpand"/>
+
+
+                            <ImageButton Source="not_started.png" BackgroundColor="#1114FF" MaximumHeightRequest="48" Clicked="OnStartTaskClicked" Grid.Row="1" VerticalOptions="Start"/>
+                            <Editor x:Name="TaskDescription" Placeholder="TaskDescription" PlaceholderColor="BlueViolet"  Grid.Column="1" Grid.Row="1" MinimumHeightRequest="125"></Editor>
+                            <Picker x:Name="picker"  Grid.Column="2" Grid.Row="1"></Picker>
+                            <Label Text="Start Time" Grid.Column="3" Grid.Row="1"/>
+                            <Label Text="EndTime" Grid.Column="4" Grid.Row="1"/>
+                            <Label Text="CompletionTime" Grid.Column="5" Grid.Row="1"/>
+                            <ImageButton Source="edit_note.png" BackgroundColor="LightSeaGreen" MaximumHeightRequest="48" Grid.Column="6" Grid.Row="1" VerticalOptions="Start"/>
+                        </Grid>
+                      
+                        </StackLayout>
+                    </ViewCell>
+                    
+                </TableSection>
+                
+               
+                <TableSection Title="Tasks" x:Name="TaskRecord">
+                    <ViewCell>
+                        <StackLayout>
+                            <Grid RowDefinitions="*" ColumnDefinitions="60,*,*,*,*,*,*,48" BackgroundColor="AntiqueWhite" Padding="5">
+
+
+
+                                
+                                <Label Text="Restart" Grid.Column="0"></Label>
+                                <Label Text="Task Id" Grid.Column="1" ></Label>
+                                <Label Text="Project Id"   Grid.Column="2"></Label>
+                                <Label Text="Project Name" Grid.Column="3" />
+                                <Label Text="Task Description" Grid.Column="4"/>
+                                <Label Text="Status" Grid.Column="5" />
+                                <Label Text="Erledigt?" Grid.Column="6"/>
+                                <Label Text="Edit" Grid.Column="7"/>
+                                
+                            </Grid>
+
+                            <CollectionView x:Name="ProjectView" Grid.Column="1" Grid.ColumnSpan="4" Grid.Row="1" BackgroundColor="AntiqueWhite">
+                                <CollectionView.ItemTemplate>
+                                    <DataTemplate>
+                                        <Grid RowDefinitions="48" ColumnDefinitions="60,*,*,*,*,*,*,48" Padding="5">
+                                            
+                                            <ImageButton Source="not_started.png" BackgroundColor="#1114FF" MaximumHeightRequest="48" Clicked="OnRestartTaskClicked" Grid.Column="0" HorizontalOptions="Start"/>
+                                            <Label Text="{Binding Id}" Grid.Column="1"/>
+                                            <Label Text="{Binding ProjectID}" Grid.Column="2"/>
+                                            <Label Text="{Binding ProjectName}" Grid.Column="3"/>
+                                            <Label Text="{Binding Description}" Grid.Column="4"/>
+                                            <Label Text="{Binding Status}" Grid.Column="5"/>
+                                            <Label Text="{Binding IsDone}" Grid.Column="6"/>
+
+                                            <!--<Label Text="{Binding OpenTasks}" Grid.Column="5" />
+                                            <Label Text="{Binding ClosedTasks}" Grid.Column="6"/>
+                                            <Label Text="{Binding AllTasks}" Grid.Column="8"/>
+                                            <Label Text="{Binding DateTime}" Grid.Column="9"/>
+                                            <Label Text="{Binding SpendTime}" Grid.Column="10"/>-->
+                                            <ImageButton Source="edit_note.png" BackgroundColor="LightSeaGreen" MaximumHeightRequest="48" Grid.Column="7" />
+
+                                        </Grid>
+                                    </DataTemplate>
+                                </CollectionView.ItemTemplate>
+                            </CollectionView>
+                        </StackLayout>
+                    </ViewCell>
+                </TableSection>
+                <!-- Komplettt Vergessen  for  now its unwichttig-->
+                <TableSection Title="Section #2">
+                    <ViewCell>
+                        <Grid RowDefinitions="*" ColumnDefinitions="*,*">
+                            <ImageButton Source="moon.png" BackgroundColor="Navy" MaximumHeightRequest="40"/>
+                            <Label Text="probably a godd place to show information about whole section 1 check to a later tinme" Grid.Column="1"/>
+                        </Grid>
+                        
+                    </ViewCell>
+                </TableSection>
+                
+            </TableRoot>
+        </TableView>
+        
+        
+    </ScrollView>
+</ContentPage>

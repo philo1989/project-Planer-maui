@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ProjektPlanerAndRessourcenManager</name>
+    </assembly>
+    <members>
+        <member name="P:ProjektPlanerAndRessourcenManager.DbModels.Project.SpendTime">
+            DD.MM.YYYY HH:MM:SS
+        </member>
+    </members>
+</doc>
