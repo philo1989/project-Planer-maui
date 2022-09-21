@@ -35,6 +35,7 @@ namespace ProjektPlanerAndRessourcenManager
         public DbHandler(string dbPath)
         {
             _dbPath = dbPath;
+            
         }
 
         public async Task AddNewProject(string projectName, string projectDescription)
@@ -45,8 +46,8 @@ namespace ProjektPlanerAndRessourcenManager
             {
                 await Init();
                 if (string.IsNullOrEmpty(projectName)) throw new Exception("Valid Name required... ToDo: Add Allowed Charaacters");
-
-                result = await SQLiteAsyncConnection.InsertAsync(new Project { Name = projectName, ProjectDescription = projectDescription, Version = "test", StartDateTime = date.ToString() });
+                //string NewRandomColor = App.RndColor.RndRGBValue().ToString();
+                result = await SQLiteAsyncConnection.InsertAsync(new Project { Name = projectName, ProjectDescription = projectDescription, Version = "test", StartDateTime = date.ToString(), Color = App.RndColor.GetColor().ToArgbHex(), });
                 StatusMessage = string.Format("{0} new Project() added (Name: {1})", result, projectName);
             }
             catch (Exception ex)
@@ -118,6 +119,20 @@ namespace ProjektPlanerAndRessourcenManager
 
             return new List<Project>();
         }
+        public List<Tasks> GetTasksTableSync()
+        {
+            try
+            {
+                SyncInit();
+                return SQLiteConnection.Table<Tasks>().ToList();
+            }
+            catch (Exception ex)
+            {
+                StatusMessage = string.Format("Failed to retrieve data. {0}", ex.Message);
+            }
+
+            return new List<Tasks>();
+        }
 
         //public async Task<bool> CheckForExistingProjects()//And Build List Dough WAYYYYYNNNEEE
         //{
@@ -134,13 +149,23 @@ namespace ProjektPlanerAndRessourcenManager
         public async Task AddNewTask(string TaskDescription, int ProjectID, string ProjectName, string status, string tagIDs)
         {
             int result = 0;
+            string ProjectColor = "";
             DateTime date = DateTime.Now;
             try
             {
                 await Init();
                 if (string.IsNullOrEmpty(TaskDescription)) throw new Exception("Valid Name required... ToDo: Add Allowed Charaacters");
 
-                result = await SQLiteAsyncConnection.InsertAsync(new Tasks { ProjectID = ProjectID, ProjectName = ProjectName, Description = TaskDescription,  Status = status, TagIDs = tagIDs +"," });
+                List<Project> projects = await SQLiteAsyncConnection.Table<Project>().ToListAsync();
+                foreach (Project project in projects)
+                {
+                    if (project.Id == ProjectID)
+                    {
+                        ProjectColor = project.Color;//*"ff00ff"*/;
+                    }
+                }
+
+                result = await SQLiteAsyncConnection.InsertAsync(new Tasks { ProjectID = ProjectID, ProjectName = ProjectName, Description = TaskDescription,  Status = status, TagIDs = tagIDs +",", Color = ProjectColor });
                 StatusMessage = string.Format("{0} new Project() added (Name: {1})", result, TaskDescription);
             }
             catch (Exception ex)
@@ -166,5 +191,6 @@ namespace ProjektPlanerAndRessourcenManager
 
             return new List<Tasks>();
         }
+       
     }
 }

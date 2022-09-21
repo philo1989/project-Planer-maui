@@ -1,1 +1,1 @@
-J:\NoNo\source\repos\ProjektPlanerAndRessourcenManager\ProjektPlanerAndRessourcenManager.csproj;x64
+J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\ProjektPlanerAndRessourcenManager.csproj;x64

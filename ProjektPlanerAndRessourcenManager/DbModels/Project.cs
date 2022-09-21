@@ -28,7 +28,8 @@ namespace ProjektPlanerAndRessourcenManager.DbModels
         public int AllTasks { get; set; }
         public string StartDateTime { get; set; } ///DD.MM.YYYY HH:MM:SS
         public string EndDateTime { get; set; } ///DD.MM.YYYY HH:MM:SS
-        public int Color { get; set; }
+        public string Color { get; set; }
+        public int FontColor { get; set; }
         //public DateTime StartDate { get; set; }
         public float SpendTime { get; set; }
         public enum ProjectType { Private, Comission, Intern}
@@ -49,6 +50,8 @@ namespace ProjektPlanerAndRessourcenManager.DbModels
         [Unique]
         public string Description { get; set; }
         public bool IsDone { get; set; }
+        public string Color { get; set; }
+        public int FontColor { get; set; }
         public string TagIDs { get; set; } //1:n relation//speichert alle tags durch ihre Ids in der jeweiligen AUfgaabe, muss durch Programm geparst werden da Sqlite keine Array/Listen Datentypen zur verfügung stellt
     }
     public class Owner { }

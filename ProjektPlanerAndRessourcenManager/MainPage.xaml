@@ -86,7 +86,8 @@
                         
                     </HorizontalStackLayout>
                     <HorizontalStackLayout Grid.Row="2" Grid.Column="1">
-                        <ImageButton Source="not_started.png" Clicked="AddNewTask" BackgroundColor="#00000000" MaximumHeightRequest="48" VerticalOptions="Start"/>
+                        <ImageButton Source="not_started.png" Clicked="AddNewTask" BackgroundColor="#0aa000" MaximumHeightRequest="48" VerticalOptions="Start"/>
+                        <!--<ImageButton Source="not_started.png" Clicked="AddNewTask" BackgroundColor="#0aa00000" MaximumHeightRequest="48" VerticalOptions="Start"/>-->
                         <!--<ImageButton Source="not_started.png" BackgroundColor="Transparent" MaximumHeightRequest="48" VerticalOptions="Start"/>-->
                         <Editor x:Name="TaskDescription" Placeholder="TaskDescription" PlaceholderColor="BlueViolet" MaximumHeightRequest="36"></Editor>
                     
@@ -162,24 +163,29 @@
                                     <Label Text="Edit" Grid.Column="5"/>
 
                                 </Grid>
-
-                                <CollectionView x:Name="ProjectView" Grid.Column="1" Grid.ColumnSpan="4" Grid.Row="1" BackgroundColor="AntiqueWhite">
+                                <VerticalStackLayout  x:Name="testhd">
+                                    
+                                    
+                                </VerticalStackLayout>
+                                
+                                <CollectionView x:Name="ProjectTasksView" Grid.Column="1" Grid.ColumnSpan="4" Grid.Row="1" BackgroundColor="AntiqueWhite">
                                     <CollectionView.ItemTemplate>
-                                        <DataTemplate>
-                                            <Grid RowDefinitions="48" ColumnDefinitions="60,*,*,*,*,*,*,48" Padding="5" ColumnSpacing="10" RowSpacing="10">
-
+                                        <DataTemplate >
+                                            <Grid RowDefinitions="48" ColumnDefinitions="60,*,*,*,*,*,*,48" Padding="5" ColumnSpacing="10" RowSpacing="10" x:Name="testxd" >
+<!--<Setter Property="TextColor" Value="Red" />-->
                                                 <ImageButton Source="not_started.png" BackgroundColor="MediumVioletRed" MaximumHeightRequest="38" MaximumWidthRequest="38" Clicked="OnRestartTaskClicked" Grid.Column="0" HorizontalOptions="Start"/>
+                                                <!--<ImageButton Source="not_started.png" BackgroundColor="{Binding Color}" MaximumHeightRequest="38" MaximumWidthRequest="38" Clicked="OnRestartTaskClicked" Grid.Column="0" HorizontalOptions="Start"/>-->
                                                 <!--<Label Text="{Binding Id}" Grid.Column="1"/>
                                                 <Label Text="{Binding ProjectID}" Grid.Column="2"/>-->
                                                 <Label Text="{Binding ProjectName}" Grid.Column="1"/>
                                                 <Label Text="{Binding Description}" Grid.Column="2"/>
                                                 <Label Text="{Binding Status}" Grid.Column="3"/>
                                                 <Label Text="{Binding IsDone}" Grid.Column="4"/>
-
-                                                <!--<Label Text="{Binding OpenTasks}" Grid.Column="5" />
+                                                <!--<Rectangle BackgroundColor="DarkCyan" x:Name="mafs"/>-->
+                                                <!--<Label Text="{Binding OpenTasks}" Grid.Column="5" />-->
                                             <Label Text="{Binding ClosedTasks}" Grid.Column="6"/>
                                             <Label Text="{Binding AllTasks}" Grid.Column="8"/>
-                                            <Label Text="{Binding DateTime}" Grid.Column="9"/>
+                                          <!--  <Label Text="{Binding DateTime}" Grid.Column="9"/>
                                             <Label Text="{Binding SpendTime}" Grid.Column="10"/>-->
                                                 <ImageButton Source="edit_note.png" BackgroundColor="MediumVioletRed" MaximumHeightRequest="38" MaximumWidthRequest="38" Grid.Column="5" />
 
@@ -187,6 +193,21 @@
                                         </DataTemplate>
                                     </CollectionView.ItemTemplate>
                                 </CollectionView>
+                                <!--<CollectionView x:Name="ProjectView" Grid.Column="1" Grid.ColumnSpan="4" Grid.Row="1" BackgroundColor="AntiqueWhite">
+                                    <CollectionView.ItemTemplate>
+                                        <DataTemplate >
+                                            <Grid RowDefinitions="48" ColumnDefinitions="60,*,*,*,*,*,*,48" Padding="5" ColumnSpacing="10" RowSpacing="10" >
+
+                                               
+                                                <Label Text="{Binding ClosedTasks}" Grid.Column="6"/>
+                                                <Label Text="{Binding AllTasks}" Grid.Column="8"/>
+                                                
+                                                <ImageButton Source="edit_note.png" BackgroundColor="MediumVioletRed" MaximumHeightRequest="38" MaximumWidthRequest="38" Grid.Column="5" />
+
+                                            </Grid>
+                                        </DataTemplate>
+                                    </CollectionView.ItemTemplate>
+                                </CollectionView>-->
                             </StackLayout>
                         </ViewCell>
                     </TableSection>

@@ -10,31 +10,31 @@
     <PackageArchitecture>x64</PackageArchitecture>
     <PackageIdentityName>9392F840-1495-4161-9B19-F59B9394FC9D</PackageIdentityName>
     <PackageIdentityPublisher>CN=NoNo</PackageIdentityPublisher>
-    <IntermediateOutputPath>J:\NoNo\source\repos\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\</IntermediateOutputPath>
+    <IntermediateOutputPath>J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\</IntermediateOutputPath>
     <RemoteDeploymentType>CopyToDevice</RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
     <RemoveNonLayoutFiles>false</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>J:\NoNo\source\repos\ProjektPlanerAndRessourcenManager\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\AppX</LayoutDir>
+    <LayoutDir>J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\AppX</LayoutDir>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="J:\NoNo\source\repos\ProjektPlanerAndRessourcenManager\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
+    <AppXManifest Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="J:\NoNo\source\repos\ProjektPlanerAndRessourcenManager\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\resources.pri">
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="J:\NoNo\source\repos\ProjektPlanerAndRessourcenManager\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\ProjektPlanerAndRessourcenManager.runtimeconfig.json">
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\ProjektPlanerAndRessourcenManager.runtimeconfig.json">
       <PackagePath>ProjektPlanerAndRessourcenManager.runtimeconfig.json</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="J:\NoNo\source\repos\ProjektPlanerAndRessourcenManager\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\ProjektPlanerAndRessourcenManager.dll">
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\ProjektPlanerAndRessourcenManager.dll">
       <PackagePath>ProjektPlanerAndRessourcenManager.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="J:\NoNo\source\repos\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\apphost.exe">
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>ProjektPlanerAndRessourcenManager.exe</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\NoNo\.nuget\packages\microsoft.netcore.app.runtime.win-x64\6.0.9\runtimes\win-x64\lib\net6.0\Microsoft.CSharp.dll">
@@ -820,7 +820,7 @@
     <AppxPackagedFile Include="C:\Users\NoNo\.nuget\packages\sqlitepclraw.lib.e_sqlite3\2.0.4\runtimes\win-x64\native\e_sqlite3.dll">
       <PackagePath>e_sqlite3.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="J:\NoNo\source\repos\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\ProjektPlanerAndRessourcenManager.deps.json">
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\ProjektPlanerAndRessourcenManager.deps.json">
       <PackagePath>ProjektPlanerAndRessourcenManager.deps.json</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files\dotnet\packs\Microsoft.Maui.Controls.Ref.win\6.0.486\ref\net6.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.pri">
@@ -832,301 +832,301 @@
     <AppxPackagedFile Include="C:\Program Files\dotnet\packs\Microsoft.Maui.Core.Ref.win\6.0.486\ref\net6.0-windows10.0.19041\Microsoft.Maui.pri">
       <PackagePath>Microsoft.Maui.pri</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="J:\NoNo\source\repos\ProjektPlanerAndRessourcenManager\Resources\Raw\AboutAssets.txt">
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="J:\NoNo\source\repos\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-100.png">
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-100.png">
       <PackagePath>splashSplashScreen.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="J:\NoNo\source\repos\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-125.png">
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-125.png">
       <PackagePath>splashSplashScreen.scale-125.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="J:\NoNo\source\repos\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-150.png">
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-150.png">
       <PackagePath>splashSplashScreen.scale-150.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="J:\NoNo\source\repos\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-200.png">
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-200.png">
       <PackagePath>splashSplashScreen.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="J:\NoNo\source\repos\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-400.png">
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-400.png">
       <PackagePath>splashSplashScreen.scale-400.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="J:\NoNo\source\repos\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Regular.ttf">
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Regular.ttf">
       <PackagePath>OpenSans-Regular.ttf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="J:\NoNo\source\repos\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Semibold.ttf">
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Semibold.ttf">
       <PackagePath>OpenSans-Semibold.ttf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="J:\NoNo\source\repos\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\add_circle.scale-100.png">
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\add_circle.scale-100.png">
       <PackagePath>add_circle.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="J:\NoNo\source\repos\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\add_circle.scale-125.png">
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\add_circle.scale-125.png">
       <PackagePath>add_circle.scale-125.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="J:\NoNo\source\repos\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\add_circle.scale-150.png">
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\add_circle.scale-150.png">
       <PackagePath>add_circle.scale-150.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="J:\NoNo\source\repos\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\add_circle.scale-200.png">
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\add_circle.scale-200.png">
       <PackagePath>add_circle.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="J:\NoNo\source\repos\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\add_circle.scale-400.png">
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\add_circle.scale-400.png">
       <PackagePath>add_circle.scale-400.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="J:\NoNo\source\repos\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\add_circle_A.scale-100.png">
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\add_circle_A.scale-100.png">
       <PackagePath>add_circle_A.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="J:\NoNo\source\repos\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\add_circle_A.scale-125.png">
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\add_circle_A.scale-125.png">
       <PackagePath>add_circle_A.scale-125.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="J:\NoNo\source\repos\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\add_circle_A.scale-150.png">
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\add_circle_A.scale-150.png">
       <PackagePath>add_circle_A.scale-150.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="J:\NoNo\source\repos\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\add_circle_A.scale-200.png">
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\add_circle_A.scale-200.png">
       <PackagePath>add_circle_A.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="J:\NoNo\source\repos\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\add_circle_A.scale-400.png">
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\add_circle_A.scale-400.png">
       <PackagePath>add_circle_A.scale-400.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="J:\NoNo\source\repos\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
       <PackagePath>appicon.ico</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="J:\NoNo\source\repos\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-100.png">
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-100.png">
       <PackagePath>appiconLargeTile.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="J:\NoNo\source\repos\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-125.png">
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-125.png">
       <PackagePath>appiconLargeTile.scale-125.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="J:\NoNo\source\repos\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-150.png">
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-150.png">
       <PackagePath>appiconLargeTile.scale-150.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="J:\NoNo\source\repos\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-200.png">
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-200.png">
       <PackagePath>appiconLargeTile.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="J:\NoNo\source\repos\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-400.png">
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-400.png">
       <PackagePath>appiconLargeTile.scale-400.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="J:\NoNo\source\repos\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-100.png">
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-100.png">
       <PackagePath>appiconLogo.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="J:\NoNo\source\repos\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-125.png">
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-125.png">
       <PackagePath>appiconLogo.scale-125.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="J:\NoNo\source\repos\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-150.png">
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-150.png">
       <PackagePath>appiconLogo.scale-150.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="J:\NoNo\source\repos\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-200.png">
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-200.png">
       <PackagePath>appiconLogo.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="J:\NoNo\source\repos\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-400.png">
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-400.png">
       <PackagePath>appiconLogo.scale-400.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="J:\NoNo\source\repos\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-100.png">
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-100.png">
       <PackagePath>appiconMediumTile.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="J:\NoNo\source\repos\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-125.png">
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-125.png">
       <PackagePath>appiconMediumTile.scale-125.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="J:\NoNo\source\repos\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-150.png">
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-150.png">
       <PackagePath>appiconMediumTile.scale-150.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="J:\NoNo\source\repos\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-200.png">
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-200.png">
       <PackagePath>appiconMediumTile.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="J:\NoNo\source\repos\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-400.png">
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-400.png">
       <PackagePath>appiconMediumTile.scale-400.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="J:\NoNo\source\repos\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-100.png">
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-100.png">
       <PackagePath>appiconSmallTile.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="J:\NoNo\source\repos\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-125.png">
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-125.png">
       <PackagePath>appiconSmallTile.scale-125.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="J:\NoNo\source\repos\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-150.png">
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-150.png">
       <PackagePath>appiconSmallTile.scale-150.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="J:\NoNo\source\repos\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-200.png">
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-200.png">
       <PackagePath>appiconSmallTile.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="J:\NoNo\source\repos\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-400.png">
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-400.png">
       <PackagePath>appiconSmallTile.scale-400.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="J:\NoNo\source\repos\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-100.png">
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-100.png">
       <PackagePath>appiconStoreLogo.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="J:\NoNo\source\repos\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-125.png">
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-125.png">
       <PackagePath>appiconStoreLogo.scale-125.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="J:\NoNo\source\repos\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-150.png">
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-150.png">
       <PackagePath>appiconStoreLogo.scale-150.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="J:\NoNo\source\repos\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-200.png">
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-200.png">
       <PackagePath>appiconStoreLogo.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="J:\NoNo\source\repos\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-400.png">
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-400.png">
       <PackagePath>appiconStoreLogo.scale-400.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="J:\NoNo\source\repos\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-100.png">
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-100.png">
       <PackagePath>appiconWideTile.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="J:\NoNo\source\repos\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-125.png">
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-125.png">
       <PackagePath>appiconWideTile.scale-125.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="J:\NoNo\source\repos\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-150.png">
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-150.png">
       <PackagePath>appiconWideTile.scale-150.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="J:\NoNo\source\repos\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-200.png">
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-200.png">
       <PackagePath>appiconWideTile.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="J:\NoNo\source\repos\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
       <PackagePath>appiconWideTile.scale-400.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="J:\NoNo\source\repos\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\comet.scale-100.png">
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\comet.scale-100.png">
       <PackagePath>comet.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="J:\NoNo\source\repos\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\date_range.scale-100.png">
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\date_range.scale-100.png">
       <PackagePath>date_range.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="J:\NoNo\source\repos\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\date_range.scale-125.png">
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\date_range.scale-125.png">
       <PackagePath>date_range.scale-125.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="J:\NoNo\source\repos\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\date_range.scale-150.png">
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\date_range.scale-150.png">
       <PackagePath>date_range.scale-150.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="J:\NoNo\source\repos\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\date_range.scale-200.png">
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\date_range.scale-200.png">
       <PackagePath>date_range.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="J:\NoNo\source\repos\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\date_range.scale-400.png">
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\date_range.scale-400.png">
       <PackagePath>date_range.scale-400.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="J:\NoNo\source\repos\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
       <PackagePath>dotnet_bot.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="J:\NoNo\source\repos\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
       <PackagePath>dotnet_bot.scale-125.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="J:\NoNo\source\repos\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
       <PackagePath>dotnet_bot.scale-150.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="J:\NoNo\source\repos\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
       <PackagePath>dotnet_bot.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="J:\NoNo\source\repos\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="J:\NoNo\source\repos\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\edit_note.scale-100.png">
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\edit_note.scale-100.png">
       <PackagePath>edit_note.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="J:\NoNo\source\repos\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\edit_note.scale-125.png">
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\edit_note.scale-125.png">
       <PackagePath>edit_note.scale-125.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="J:\NoNo\source\repos\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\edit_note.scale-150.png">
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\edit_note.scale-150.png">
       <PackagePath>edit_note.scale-150.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="J:\NoNo\source\repos\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\edit_note.scale-200.png">
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\edit_note.scale-200.png">
       <PackagePath>edit_note.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="J:\NoNo\source\repos\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\edit_note.scale-400.png">
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\edit_note.scale-400.png">
       <PackagePath>edit_note.scale-400.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="J:\NoNo\source\repos\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\hourglass_bottom.scale-100.png">
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\hourglass_bottom.scale-100.png">
       <PackagePath>hourglass_bottom.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="J:\NoNo\source\repos\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\hourglass_bottom.scale-125.png">
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\hourglass_bottom.scale-125.png">
       <PackagePath>hourglass_bottom.scale-125.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="J:\NoNo\source\repos\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\hourglass_bottom.scale-150.png">
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\hourglass_bottom.scale-150.png">
       <PackagePath>hourglass_bottom.scale-150.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="J:\NoNo\source\repos\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\hourglass_bottom.scale-200.png">
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\hourglass_bottom.scale-200.png">
       <PackagePath>hourglass_bottom.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="J:\NoNo\source\repos\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\hourglass_bottom.scale-400.png">
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\hourglass_bottom.scale-400.png">
       <PackagePath>hourglass_bottom.scale-400.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="J:\NoNo\source\repos\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\hourglass_disabled.scale-100.png">
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\hourglass_disabled.scale-100.png">
       <PackagePath>hourglass_disabled.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="J:\NoNo\source\repos\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\hourglass_disabled.scale-125.png">
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\hourglass_disabled.scale-125.png">
       <PackagePath>hourglass_disabled.scale-125.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="J:\NoNo\source\repos\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\hourglass_disabled.scale-150.png">
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\hourglass_disabled.scale-150.png">
       <PackagePath>hourglass_disabled.scale-150.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="J:\NoNo\source\repos\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\hourglass_disabled.scale-200.png">
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\hourglass_disabled.scale-200.png">
       <PackagePath>hourglass_disabled.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="J:\NoNo\source\repos\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\hourglass_disabled.scale-400.png">
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\hourglass_disabled.scale-400.png">
       <PackagePath>hourglass_disabled.scale-400.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="J:\NoNo\source\repos\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\hourglass_top.scale-100.png">
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\hourglass_top.scale-100.png">
       <PackagePath>hourglass_top.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="J:\NoNo\source\repos\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\hourglass_top.scale-125.png">
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\hourglass_top.scale-125.png">
       <PackagePath>hourglass_top.scale-125.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="J:\NoNo\source\repos\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\hourglass_top.scale-150.png">
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\hourglass_top.scale-150.png">
       <PackagePath>hourglass_top.scale-150.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="J:\NoNo\source\repos\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\hourglass_top.scale-200.png">
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\hourglass_top.scale-200.png">
       <PackagePath>hourglass_top.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="J:\NoNo\source\repos\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\hourglass_top.scale-400.png">
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\hourglass_top.scale-400.png">
       <PackagePath>hourglass_top.scale-400.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="J:\NoNo\source\repos\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\link.scale-100.png">
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\link.scale-100.png">
       <PackagePath>link.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="J:\NoNo\source\repos\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\link.scale-125.png">
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\link.scale-125.png">
       <PackagePath>link.scale-125.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="J:\NoNo\source\repos\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\link.scale-150.png">
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\link.scale-150.png">
       <PackagePath>link.scale-150.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="J:\NoNo\source\repos\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\link.scale-200.png">
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\link.scale-200.png">
       <PackagePath>link.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="J:\NoNo\source\repos\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\link.scale-400.png">
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\link.scale-400.png">
       <PackagePath>link.scale-400.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="J:\NoNo\source\repos\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\moon.scale-100.png">
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\moon.scale-100.png">
       <PackagePath>moon.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="J:\NoNo\source\repos\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\more_time.scale-100.png">
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\more_time.scale-100.png">
       <PackagePath>more_time.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="J:\NoNo\source\repos\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\more_time.scale-125.png">
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\more_time.scale-125.png">
       <PackagePath>more_time.scale-125.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="J:\NoNo\source\repos\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\more_time.scale-150.png">
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\more_time.scale-150.png">
       <PackagePath>more_time.scale-150.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="J:\NoNo\source\repos\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\more_time.scale-200.png">
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\more_time.scale-200.png">
       <PackagePath>more_time.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="J:\NoNo\source\repos\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\more_time.scale-400.png">
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\more_time.scale-400.png">
       <PackagePath>more_time.scale-400.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="J:\NoNo\source\repos\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\not_started.scale-100.png">
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\not_started.scale-100.png">
       <PackagePath>not_started.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="J:\NoNo\source\repos\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\not_started.scale-125.png">
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\not_started.scale-125.png">
       <PackagePath>not_started.scale-125.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="J:\NoNo\source\repos\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\not_started.scale-150.png">
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\not_started.scale-150.png">
       <PackagePath>not_started.scale-150.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="J:\NoNo\source\repos\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\not_started.scale-200.png">
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\not_started.scale-200.png">
       <PackagePath>not_started.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="J:\NoNo\source\repos\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\not_started.scale-400.png">
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\not_started.scale-400.png">
       <PackagePath>not_started.scale-400.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="J:\NoNo\source\repos\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\question.scale-100.png">
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\question.scale-100.png">
       <PackagePath>question.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="J:\NoNo\source\repos\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\starfield.scale-100.png">
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\starfield.scale-100.png">
       <PackagePath>starfield.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="J:\NoNo\source\repos\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\sun.scale-100.png">
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\sun.scale-100.png">
       <PackagePath>sun.scale-100.png</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>

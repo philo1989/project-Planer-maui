@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System;
 using System.Globalization;
 using ProjektPlanerAndRessourcenManager.Pages;
+using System.Threading.Tasks;
+using System.Linq;
 //using Android.App;
 
 namespace ProjektPlanerAndRessourcenManager;
@@ -12,7 +14,10 @@ public partial class MainPage : ContentPage
     private int ProjectId;
     private string ProjectName;
     private string TagIDs;
+    int FillTaskViewCounter = 0;
 
+    Label label1;
+    Label label;
 
     public MainPage()
     {
@@ -38,36 +43,130 @@ public partial class MainPage : ContentPage
         List<Project> projects = App.DbHandle.GetProjectTableSync();
         //picker.ItemsSource = projects;
 
-        //if (projects.Count == 0) Shell.Current.GoToAsync(nameof(ExamplePage));
-        //else
-        //{
-        var projectNames = new List<string>();
-
-        //for (int i = 0; i <= projects.Count; i++)
-        //{
-
-        //}
-        foreach (var project in projects)
+        if (projects.Count == 0) { /*Shell.Current.GoToAsync(nameof(ExamplePage))*/; }
+        else
         {
-            projectNames.Add(project.Name);
-            projectNames.Add(project.ProjectDescription);
-        }
-        projectPicker.ItemsSource = projectNames;
+            var projectNames = new List<string>();
 
-        projectPicker.SelectedItem = projectNames[0];
-        tagPicker.SelectedIndex = 0;
-        toggleRecurringTask.SelectedIndex = 0;
-        //}
+            //for (int i = 0; i <= projects.Count; i++)
+            //{
+
+            //}
+            foreach (var project in projects)
+            {
+                projectNames.Add(project.Name);
+
+
+            }
+            projectPicker.ItemsSource = projectNames;
+
+            projectPicker.SelectedItem = projectNames[0];
+            tagPicker.SelectedIndex = 0;
+            toggleRecurringTask.SelectedIndex = 0;
+        }
         FillTaskView();
     }
-    public async void FillTaskView()
+    public void FillTaskView(/*bool isLocked = false*/)
     {
-        List<Tasks> tasks = await App.DbHandle.GetTasksTable();
+        testhd.Children.Clear();
+        //if (isLocked)
+        //{ return true; }
 
-        ProjectView.ItemsSource = tasks.OrderByDescending(t => t.Id).ToList();
+        List<Tasks> tasks = App.DbHandle.GetTasksTableSync();
+        List<Project> projects = App.DbHandle.GetProjectTableSync();
+
+        label = new Label()
+        {
+            Text = ""
+        };
+
+        ProjectTasksView.ItemsSource = tasks.OrderByDescending(t => t.Id).ToList();
+        //ProjectView.ItemsSource = projects./*OrderByDescending(t => t.Id).*/ToList();
+
+        //if (testhd.Count() == tasks.Count)
+        //{ 
+
+        //if (FillTaskViewCounter != 0) { return; }
+        //else if (FillTaskViewCounter == 0)
+        //{
+
+        foreach (var task in tasks.OrderByDescending(t => t.Id).ToList())
+        {
+            FillTaskViewCounter++;
+
+            //Label tesLaabel = new Label();
+
+            //if (label.Text != $"{task.Id}")
+            //{
+
+           
+            for (int i = 0; i < testhd.Children.Count; i++)
+            {
+                var tmplabel = new Label();
+                tmplabel = (Label)testhd.Children[i];
+                if (tmplabel.Text == task.Id.ToString()) { return; }
+                else {
+                    //test8 += testhd.Children[i].ToString();
+                    
+                }
+            }
+            
+            label1 = new Label
+            {
+                BackgroundColor = App.RndColor.TranslateDbColor(task.Color),
+                Text = $"[{task.ProjectName}][{task.Description}][{testhd.Count()}][{tasks.Count}][{FillTaskViewCounter}]",
+
+                VerticalOptions = LayoutOptions.Start
+            };
+            label = new Label()
+            {
+                Text = $"{task.Id}",
+                IsVisible = false,
+            };
+            //new HorizontalStackLayout container;
+            testhd.Children.Add(label1);
+            testhd.Children.Add(label);
+        }
+        //}
+        //return false;
+        //}
+        //else if (FillTaskViewCounter == tasks.Count()) { FillTaskViewCounter = 0; }
+        //}
     }
     public void OnRestartTaskClicked(object sender, EventArgs args)
-    { }
+    {
+        if (App.RndColor.Hello())
+        {
+            string test8 = "";
+            for (int i = 0; i < testhd.Children.Count; i++)
+            {
+                var tmplabel = new Label();
+                tmplabel = (Label)testhd.Children[i];
+
+                test8 += tmplabel.Text;
+                //test8 += testhd.Children[i].ToString();    
+            }
+            testhd.Children.Clear();    
+            string test = App.RndColor.HexString(6);
+            List<Tasks> tasks = App.DbHandle.GetTasksTableSync();
+            string test2 = tasks[0].Color.Substring(1, 2);
+            string test4 = tasks[0].Color.Substring(3, 2);
+            string test5 = tasks[0].Color.Substring(5, 2);
+
+            int test3 = int.Parse(test2, NumberStyles.HexNumber);
+            test3.ToString();
+            int test6 = int.Parse(test4, NumberStyles.HexNumber);
+            test6.ToString();
+            int test7 = int.Parse(test5, NumberStyles.HexNumber);
+            test7.ToString();
+            DisplayAlert("RndColorClaass", "says TTrue == Ello" + " >>>" + test2 + ":::" + test3 + "<<<<"
+                + " >>>" + test4 + ":::" + test6 + "<<<<"
+                + " >>>" + test5 + ":::" + test7 + "<<<<" + test8
+                , "XD");
+        }
+        //Convert.FromHexString
+
+    }
     private bool CheckDBContent()//ChheckDBContentProjectTable
     {
         List<Project> projects = GetProjectsTable();
@@ -80,7 +179,8 @@ public partial class MainPage : ContentPage
     }
     protected override void OnAppearing()
     {
-        if (CheckDBContent()) {
+        if (CheckDBContent())
+        {
             ProjectOverview.ItemsSource = GetProjectsTable();
             ProjectLabel.Text = "";
             //foreach (var project in projects)
@@ -110,6 +210,8 @@ public partial class MainPage : ContentPage
     }
     public async void AddNewTask(object sender, EventArgs args)
     {
+
+        ProjectTasksView.BackgroundColor = App.RndColor.RndRGBValue();
         List<Project> projects = await App.DbHandle.GetProjectTable();
 
         //if (projects.Count() == 0) { await Shell.Current.GoToAsync(nameof(ExamplePage)); }
@@ -129,9 +231,10 @@ public partial class MainPage : ContentPage
 
             FillTaskView();
 
-            await DisplayAlert(">+<", "erfolgreich", "ok");
+            //await DisplayAlert(">+<", "erfolgreich", "ok");
 
-        } else { await DisplayAlert("Fehler", "TaskDescritpion can't be null", "ok"); }
+        }
+        else { /*await DisplayAlert("Fehler", "TaskDescritpion can't be null", "ok");*/ }
 
 
         //string IDstring = "Id" + ProjectId.ToString() + ".";
@@ -142,7 +245,7 @@ public partial class MainPage : ContentPage
         startNewTask();
     }
     public void startNewTask()
-    {}
+    { }
 
 }
 
