@@ -6,22 +6,7 @@
     <ScrollView Margin="25" BackgroundColor="NavajoWhite" x:Name="MainView">
 
         <Grid RowDefinitions="15,200,*,*,*,*" ColumnDefinitions="*,*,*,*,*,*,*,*,*,*,*" RowSpacing="5" ColumnSpacing="5"><!--11 Columns-->
-            <!--<Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-            </Grid.ColumnDefinitions>--><!--<Grid.RowDefinitions>
-                <RowDefinition Height="200"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-            </Grid.RowDefinitions>-->
-            
-            
+                     
             <Rectangle BackgroundColor="Plum" Grid.Column="0" />
             <Rectangle BackgroundColor="AntiqueWhite" Grid.Column="1" />
             <Rectangle BackgroundColor="Azure" Grid.Column="2" />
@@ -52,7 +37,7 @@
             </StackLayout>
             
             
-            <Label x:Name="ProjectLabel" Text="" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2" VerticalOptions="Center" />
+            <Label x:Name="ProjectLabel" Text="" Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="5" VerticalOptions="Center" />
 
             <StackLayout Grid.Column="1" Grid.Row="2" Grid.ColumnSpan="2" VerticalOptions="Center">
             <Label  Text="dotnet publish -f net6.0-windows10.0.19041.0 -c Release -p:WindowsPackageType=None" BackgroundColor="Honeydew"   VerticalOptions="Center"/>

@@ -16,8 +16,7 @@ public partial class MainPage : ContentPage
     private string TagIDs;
     int FillTaskViewCounter = 0;
 
-    Label label1;
-    Label label;
+    
 
     public MainPage()
     {
@@ -73,54 +72,63 @@ public partial class MainPage : ContentPage
         List<Tasks> tasks = App.DbHandle.GetTasksTableSync();
         List<Project> projects = App.DbHandle.GetProjectTableSync();
 
-        label = new Label()
-        {
-            Text = ""
-        };
+        Label label1;
+        Label label;
+        HorizontalStackLayout horizontalTaskEntry;
+        ImageButton startTaskImageButton;
+
 
         foreach (var task in tasks.OrderByDescending(t => t.Id).ToList())
         {
             FillTaskViewCounter++;//Debug Variable 
 
-            //Label tesLaabel = new Label();
+            horizontalTaskEntry = new HorizontalStackLayout
+            {
+                Padding = new Thickness(5, 0, 5, 0),
+                BackgroundColor = App.RndColor.TranslateDbColor(task.Color),
+            };
 
-            //if (label.Text != $"{task.Id}")
-            //{
+            startTaskImageButton = new ImageButton
+            {
+                //BackgroundColor = App.RndColor.TranslateDbColor(task.Color),
+                Source = "not_started.png",
+            };
+            //startTaskImageButton.Focused += (sender, e) => startTaskImageButton.BackgroundColor = App.RndColor.TranslateDbColor(task.Color);
+            startTaskImageButton.Clicked += async (s, e) => await StartTask(task.Id);
 
-           
-            //for (int i = 0; i < testhd.Children.Count; i++)
-            //{
-            //    var tmplabel = new Label();
-            //    tmplabel = (Label)testhd.Children[i];
-            //    if (tmplabel.Text == task.Id.ToString()) { return; }
-            //    else {
-            //        //DisplayAlert("To muttch", "added new task", "hrmpf");
-            //        //test8 += testhd.Children[i].ToString();
-                    
-            //    }
-            //}
-            
             label1 = new Label
             {
-                BackgroundColor = App.RndColor.TranslateDbColor(task.Color),
-                Text = $"[{task.ProjectName}][{task.Description}]{task.Id}",/*[{testhd.Count()}][{tasks.Count}][{FillTaskViewCounter}]*/
+                
+                Text = $"[{task.ProjectName}] [{task.Description}] [{task.Status}]",/*[{testhd.Count()}][{tasks.Count}][{FillTaskViewCounter}]*/
 
                 VerticalOptions = LayoutOptions.Center
             };
+           
             label = new Label()
             {
                 Text = $"{task.Id}",
-                IsVisible = false,
+                IsVisible = true,
             };
-            //new HorizontalStackLayout container;
-            testhd.Children.Add(label1);
-            testhd.Children.Add(label);
+
+            horizontalTaskEntry.Children.Add(startTaskImageButton);
+            horizontalTaskEntry.Children.Add(label1);
+            horizontalTaskEntry.Children.Add(label);
+            testhd.Children.Add(horizontalTaskEntry);
         }
-        //}
-        //return false;
-        //}
-        //else if (FillTaskViewCounter == tasks.Count()) { FillTaskViewCounter = 0; }
-        //}
+    }
+    public async Task StartTask(int taskId)
+    {
+       
+        await App.DbHandle.AddStartTimeToTask(taskId);
+
+
+
+        ////JUST SOME TESTS
+        List<Project> projects = App.DbHandle.GetProjectTableSync();
+        ProjectLabel.Text = taskId.ToString()+"|||||";
+        ProjectLabel.Text += projects[0].StartDateTime + "|||||";
+        ProjectLabel.Text += App.DbHandle.ToUtcDateTime() + "|||||";
+        ProjectLabel.Text += App.DbHandle.ToLocalDateTime() + "|||||";
     }
     public void OnRestartTaskClicked(object sender, EventArgs args)
     {
@@ -231,10 +239,11 @@ public partial class MainPage : ContentPage
 
 
         //!!!!Wichtig!!!! Fehlt noch
-        startNewTask();
+        StartNewTask();
     }
-    public void startNewTask()
+    public void StartNewTask()
     { }
+    
 
 }
 

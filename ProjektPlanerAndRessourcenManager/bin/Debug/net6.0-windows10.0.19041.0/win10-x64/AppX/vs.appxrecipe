@@ -29,13 +29,13 @@
     <AppXManifest Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2022-09-27T07:48:44.248</Modified>
+      <Modified>2022-09-27T10:55:34.479</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2022-09-27T07:48:25.691</Modified>
+      <Modified>2022-09-27T10:55:33.698</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\ProjektPlanerAndRessourcenManager.runtimeconfig.json">
       <PackagePath>ProjektPlanerAndRessourcenManager.runtimeconfig.json</PackagePath>
@@ -43,11 +43,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\ProjektPlanerAndRessourcenManager.dll">
       <PackagePath>ProjektPlanerAndRessourcenManager.dll</PackagePath>
-      <Modified>2022-09-26T20:17:35.806</Modified>
+      <Modified>2022-09-27T10:55:32.488</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>ProjektPlanerAndRessourcenManager.exe</PackagePath>
-      <Modified>2022-09-26T20:17:35.869</Modified>
+      <Modified>2022-09-27T10:55:32.566</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\NoNo\.nuget\packages\microsoft.netcore.app.runtime.win-x64\6.0.9\runtimes\win-x64\lib\net6.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -1095,7 +1095,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\ProjektPlanerAndRessourcenManager.deps.json">
       <PackagePath>ProjektPlanerAndRessourcenManager.deps.json</PackagePath>
-      <Modified>2022-09-27T07:48:43.486</Modified>
+      <Modified>2022-09-27T10:55:34.245</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files\dotnet\packs\Microsoft.Maui.Controls.Ref.win\6.0.486\ref\net6.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.pri">
       <PackagePath>Microsoft.Maui.Controls.Compatibility.pri</PackagePath>
