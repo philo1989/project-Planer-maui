@@ -66,11 +66,9 @@ public partial class MainPage : ContentPage
         }
         FillTaskView();
     }
-    public void FillTaskView(/*bool isLocked = false*/)
+    public void FillTaskView(/*add debug string param*/)
     {
         testhd.Children.Clear();
-        //if (isLocked)
-        //{ return true; }
 
         List<Tasks> tasks = App.DbHandle.GetTasksTableSync();
         List<Project> projects = App.DbHandle.GetProjectTableSync();
@@ -79,16 +77,6 @@ public partial class MainPage : ContentPage
         {
             Text = ""
         };
-
-        //ProjectTasksView.ItemsSource = tasks.OrderByDescending(t => t.Id).ToList();
-        //ProjectView.ItemsSource = projects./*OrderByDescending(t => t.Id).*/ToList();
-
-        //if (testhd.Count() == tasks.Count)
-        //{ 
-
-        //if (FillTaskViewCounter != 0) { return; }
-        //else if (FillTaskViewCounter == 0)
-        //{
 
         foreach (var task in tasks.OrderByDescending(t => t.Id).ToList())
         {
