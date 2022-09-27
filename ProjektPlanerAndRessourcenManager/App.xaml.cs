@@ -13,4 +13,6 @@ public partial class App : Application
 		DbHandle = db; //Handler singleton INstance
 		RndColor = rc;
 	}
+
+
 }

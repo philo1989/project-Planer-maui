@@ -5,7 +5,6 @@ using System.Globalization;
 using ProjektPlanerAndRessourcenManager.Pages;
 using System.Threading.Tasks;
 using System.Linq;
-//using Android.App;
 
 namespace ProjektPlanerAndRessourcenManager;
 
@@ -15,8 +14,9 @@ public partial class MainPage : ContentPage
     private string ProjectName;
     private string TagIDs;
     int FillTaskViewCounter = 0;
-
-    
+    int activeTaskId;
+    List<Tasks> tasks = App.DbHandle.GetTasksTableSync();
+    List<Project> projects = App.DbHandle.GetProjectTableSync();
 
     public MainPage()
     {
@@ -39,7 +39,7 @@ public partial class MainPage : ContentPage
     //}
     protected void OnInit()
     {
-        List<Project> projects = App.DbHandle.GetProjectTableSync();
+        projects = App.DbHandle.GetProjectTableSync();
         //picker.ItemsSource = projects;
 
         if (projects.Count == 0) { /*Shell.Current.GoToAsync(nameof(ExamplePage))*/; }
@@ -59,7 +59,7 @@ public partial class MainPage : ContentPage
             }
             projectPicker.ItemsSource = projectNames;
 
-            projectPicker.SelectedItem = projectNames[0];
+            projectPicker.SelectedItem = 0; /*projectNames[0]*/
             tagPicker.SelectedIndex = 0;
             toggleRecurringTask.SelectedIndex = 0;
         }
@@ -69,8 +69,8 @@ public partial class MainPage : ContentPage
     {
         testhd.Children.Clear();
 
-        List<Tasks> tasks = App.DbHandle.GetTasksTableSync();
-        List<Project> projects = App.DbHandle.GetProjectTableSync();
+        tasks = App.DbHandle.GetTasksTableSync();
+        projects = App.DbHandle.GetProjectTableSync();
 
         Label label1;
         Label label;
@@ -98,7 +98,7 @@ public partial class MainPage : ContentPage
 
             label1 = new Label
             {
-                
+                TextColor = Color.FromArgb("FF69B4")/*App.RndColor.TranslateDbColor(task.Color)*/,
                 Text = $"[{task.ProjectName}] [{task.Description}] [{task.Status}]",/*[{testhd.Count()}][{tasks.Count}][{FillTaskViewCounter}]*/
 
                 VerticalOptions = LayoutOptions.Center
@@ -118,13 +118,40 @@ public partial class MainPage : ContentPage
     }
     public async Task StartTask(int taskId)
     {
-       
-        await App.DbHandle.AddStartTimeToTask(taskId);
+        tasks = await App.DbHandle.GetTasksTable();
+        int _activeID;
+        foreach (var task in tasks)
+        {
+            if (task.Status == "running" && task.Id != taskId)
+            {
+                AAAAHHHH();
+                App.DbHandle.ChangeTaskStatus(task.Id, "done");
+                //task.Status = "done"; // würde nur die lokale kopie der Daten aber nicht die Db Einträge ändern
+                System.Diagnostics.Debug.WriteLine($"if: task.Id = {task.Id}, taskId = {taskId}");
+            }
+            else if (task.Status == "running" && task.Id == taskId) { 
+                 App.DbHandle.ChangeTaskStatus(task.Id, "done");
+                System.Diagnostics.Debug.WriteLine($"else if: task.Id = {task.Id}, taskId = {taskId}");
+                break;
+            }
+            else {
+                activeTaskId = task.Id;
+                App.DbHandle.ChangeTaskStatus(taskId, "running");
+                System.Diagnostics.Debug.WriteLine($"else: task.Id = {task.Id}, taskId = {taskId}");
+                if (task.StartDateTime == null) {await App.DbHandle.AddStartTimeToTask(taskId);
+                    System.Diagnostics.Debug.WriteLine($"else: task.StartDateTime = {task.StartDateTime}, taskId = {taskId},{task}");
+                }
+            }
 
+
+        }
+       
+        
+        FillTaskView();
 
 
         ////JUST SOME TESTS
-        List<Project> projects = App.DbHandle.GetProjectTableSync();
+        projects = App.DbHandle.GetProjectTableSync();
         ProjectLabel.Text = taskId.ToString()+"|||||";
         ProjectLabel.Text += projects[0].StartDateTime + "|||||";
         ProjectLabel.Text += App.DbHandle.ToUtcDateTime() + "|||||";
@@ -145,7 +172,7 @@ public partial class MainPage : ContentPage
             }
             testhd.Children.Clear();    
             string test = App.RndColor.HexString(6);
-            List<Tasks> tasks = App.DbHandle.GetTasksTableSync();
+            tasks = App.DbHandle.GetTasksTableSync();
             string test2 = tasks[0].Color.Substring(1, 2);
             string test4 = tasks[0].Color.Substring(3, 2);
             string test5 = tasks[0].Color.Substring(5, 2);
@@ -166,8 +193,9 @@ public partial class MainPage : ContentPage
     }
     private bool CheckDBContent()//ChheckDBContentProjectTable
     {
-        List<Project> projects = GetProjectsTable();
-        if (projects.Count == 0) { return false; }
+        projects = GetProjectsTable();
+        tasks = App.DbHandle.GetTasksTableSync();
+        if (projects.Count == 0 || tasks.Count == 0) { return false; }
         else { return true; }
     }
     private List<Project> GetProjectsTable()
@@ -176,6 +204,7 @@ public partial class MainPage : ContentPage
     }
     protected override void OnAppearing()
     {
+        System.Diagnostics.Debug.WriteLine("Appearing");
         if (CheckDBContent())
         {
             ProjectOverview.ItemsSource = GetProjectsTable();
@@ -209,7 +238,7 @@ public partial class MainPage : ContentPage
     {
 
         ProjectTasksView.BackgroundColor = App.RndColor.RndRGBValue();
-        List<Project> projects = await App.DbHandle.GetProjectTable();
+        projects = await App.DbHandle.GetProjectTable();
 
         //if (projects.Count() == 0) { await Shell.Current.GoToAsync(nameof(ExamplePage)); }
         if (TaskDescription.Text != null)
@@ -224,7 +253,7 @@ public partial class MainPage : ContentPage
                 }
 
             }
-            await App.DbHandle.AddNewTask(TaskDescription.Text, ProjectId, ProjectName, "running", TagIDs);
+            await App.DbHandle.AddNewTask(TaskDescription.Text, ProjectId, ProjectName, "open", TagIDs);
 
             FillTaskView();
 
@@ -239,12 +268,27 @@ public partial class MainPage : ContentPage
 
 
         //!!!!Wichtig!!!! Fehlt noch
-        StartNewTask();
+        // erstml weglassen, später dedicaated button for direct start
+        //StartNewTask();
     }
     public void StartNewTask()
     { }
-    
+    protected override void OnDisappearing()
+    {
 
+        //tasks = App.DbHandle.GetTasksTableSync();
+        //foreach (var task in tasks)
+        //{
+        //    if (task.Status == "running") { App.DbHandle.ChangeTaskStatus(task.Id, "done"); }
+        //}
+        if (activeTaskId != 0) { App.DbHandle.ChangeTaskStatus(activeTaskId, "done"); }
+        
+        System.Diagnostics.Debug.WriteLine("Disappearing");
+    }
+    public void AAAAHHHH()
+    {
+        DisplayAlert("", "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA", "ok");
+    }
 }
 
 /*ToDO*/
