@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using SQLite;
 using ProjektPlanerAndRessourcenManager.DbModels;
 using ProjektPlanerAndRessourcenManager.Pages;
+using Microsoft.Maui.Controls;
 
 namespace ProjektPlanerAndRessourcenManager
 {
@@ -35,7 +36,7 @@ namespace ProjektPlanerAndRessourcenManager
         public DbHandler(string dbPath)
         {
             _dbPath = dbPath;
-            
+
         }
 
         public async Task AddNewProject(string projectName, string projectDescription)
@@ -57,8 +58,8 @@ namespace ProjektPlanerAndRessourcenManager
 
 
             /*.Insert returns the number of added rows*/
-            
-           //functionality
+
+            //functionality
         }
         public async Task TestManagmentProtocollDate()
         {
@@ -69,7 +70,7 @@ namespace ProjektPlanerAndRessourcenManager
                 await Init();
                 //if (string.IsNullOrEmpty(projectName)) throw new Exception("Valid Name required... ToDo: Add Allowed Charaacters");
 
-                result = await SQLiteAsyncConnection.InsertAsync(new TimeManagmentProtocol {DateTime = now.ToString() });
+                result = await SQLiteAsyncConnection.InsertAsync(new TimeManagmentProtocol { DateTime = now.ToString() });
                 StatusMessage = string.Format("{0} new Time() added (Name: {1})", result, now);
             }
             catch (Exception ex)
@@ -165,7 +166,7 @@ namespace ProjektPlanerAndRessourcenManager
                     }
                 }
 
-                result = await SQLiteAsyncConnection.InsertAsync(new Tasks { ProjectID = ProjectID, ProjectName = ProjectName, Description = TaskDescription,  Status = status, TagIDs = tagIDs +",", Color = ProjectColor });
+                result = await SQLiteAsyncConnection.InsertAsync(new Tasks { ProjectID = ProjectID, ProjectName = ProjectName, Description = TaskDescription, Status = status, TagIDs = tagIDs + ",", Color = ProjectColor });
                 StatusMessage = string.Format("{0} new Project() added (Name: {1})", result, TaskDescription);
             }
             catch (Exception ex)
@@ -175,7 +176,7 @@ namespace ProjektPlanerAndRessourcenManager
         }
         public async Task EditTask(string name)
         {
-           //functionality
+            //functionality
         }
         public async Task<List<Tasks>> GetTasksTable()
         {
@@ -191,6 +192,88 @@ namespace ProjektPlanerAndRessourcenManager
 
             return new List<Tasks>();
         }
-       
+        public DateTime ToUtcDateTime()
+        {
+            return DateTime.UtcNow;
+
+        }
+        public DateTime ToLocalDateTime()
+        {
+            return DateTime.UtcNow;
+
+        }
+
+        public async Task AddStartTimeToTask(int taskId)
+        {
+           
+            int result = 0;
+            object _result;
+            //string sqlcmd = ("UPDATE Employee SET Skill=\"" + taskId + "\" WHERE BadgeId=\"" + taskId + "\"");
+
+            string sqlCommand = $"UPDATE tasks SET StartDateTime=\"" + DateTime.Now + "\" WHERE Id=\"" + taskId + "\"";
+            //string sqlCommand = $"SELECT StartDateTime FROM tasks WHERE Id {taskId} ";
+            //_result = await SQLiteAsyncConnection.FindAsync<Tasks>(c => c.Id == taskId); --> thorws exception 
+            //await SQLiteAsyncConnection.InsertAsync(sqlCommand);
+            try
+            {
+                await Init();
+                //await connection.
+                
+                result = await SQLiteAsyncConnection.ExecuteAsync(sqlCommand);
+                //result = await SQLiteAsyncConnection.InsertAsync(new Tasks { StartDateTime = DateTime.Now.ToString() });
+                StatusMessage = string.Format("{0} new Project() added (Name: {1})", result, result);
+            }
+            catch (Exception ex)
+            {
+                StatusMessage = string.Format("Failed to add Time {0}, Exception {1} ", sqlCommand, ex.Message);
+            }
+        }
+        public async Task<bool> CheckStartTime(int taskId)
+        {
+            List<Tasks> tasks = await App.DbHandle.GetTasksTable();
+
+            return false;
+        }
+        public void ChangeTaskStatus(int taskId, string newStatus)
+        {
+            int result = 0;
+            
+            string sqlCommand = $"UPDATE tasks SET Status=\"" + newStatus + "\" WHERE Id=\"" + taskId + "\"";
+
+            try
+            {
+                SyncInit();
+                //await connection.
+
+                result = SQLiteConnection.Execute(sqlCommand);
+                //result = await SQLiteAsyncConnection.InsertAsync(new Tasks { StartDateTime = DateTime.Now.ToString() });
+                StatusMessage = string.Format("{0} new Project() added (Name: {1})", result, result);
+            }
+            catch (Exception ex)
+            {
+                StatusMessage = string.Format("Failed to add Time {0}, Exception {1} ", sqlCommand, ex.Message);
+            }
+        } 
+        //public async Task ChangeTaskStatus(int taskId, string newStatus)
+        //{
+        //    int result = 0;
+            
+        //    string sqlCommand = $"UPDATE tasks SET Status=\"" + newStatus + "\" WHERE Id=\"" + taskId + "\"";
+
+        //    try
+        //    {
+        //        await Init();
+        //        //await connection.
+
+        //        result = await SQLiteAsyncConnection.ExecuteAsync(sqlCommand);
+        //        //result = await SQLiteAsyncConnection.InsertAsync(new Tasks { StartDateTime = DateTime.Now.ToString() });
+        //        StatusMessage = string.Format("{0} new Project() added (Name: {1})", result, result);
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        StatusMessage = string.Format("Failed to add Time {0}, Exception {1} ", sqlCommand, ex.Message);
+        //    }
+        //}
+
     }
 }
