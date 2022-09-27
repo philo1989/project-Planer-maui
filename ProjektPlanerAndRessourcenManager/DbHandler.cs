@@ -7,6 +7,7 @@ using SQLite;
 using ProjektPlanerAndRessourcenManager.DbModels;
 using ProjektPlanerAndRessourcenManager.Pages;
 using Microsoft.Maui.Controls;
+using Android.App;
 
 namespace ProjektPlanerAndRessourcenManager
 {
@@ -202,12 +203,10 @@ namespace ProjektPlanerAndRessourcenManager
             return DateTime.UtcNow;
 
         }
-
+        //Obsolete
         public async Task AddStartTimeToTask(int taskId)
         {
-           
             int result = 0;
-            object _result;
             //string sqlcmd = ("UPDATE Employee SET Skill=\"" + taskId + "\" WHERE BadgeId=\"" + taskId + "\"");
 
             string sqlCommand = $"UPDATE tasks SET StartDateTime=\"" + DateTime.Now + "\" WHERE Id=\"" + taskId + "\"";
@@ -228,6 +227,32 @@ namespace ProjektPlanerAndRessourcenManager
                 StatusMessage = string.Format("Failed to add Time {0}, Exception {1} ", sqlCommand, ex.Message);
             }
         }
+        public async Task EditTime(int taskId, string kind)
+        {
+            int result = 0;
+            
+
+            if (kind == "end") {
+                string sqlCommand = $"UPDATE tasks SET EndDateTime=\"" + DateTime.Now + "\" WHERE Id=\"" + taskId + "\"";
+                try {
+                   
+                    await Init();
+                    result = await SQLiteAsyncConnection.ExecuteAsync(sqlCommand);
+                }
+                catch (Exception ex) { StatusMessage = string.Format("Failed to Edit ttime, sql->{0}, Exception {1} ", sqlCommand, ex.Message); }
+            }
+            
+            if (kind == "start") {
+                string sqlCommand = $"UPDATE tasks SET StartDateTime=\"" + DateTime.Now + "\" WHERE Id=\"" + taskId + "\"";
+                try {
+                   
+                    await Init();
+                    result = await SQLiteAsyncConnection.ExecuteAsync(sqlCommand);
+                }
+                catch (Exception ex) { StatusMessage = string.Format("Failed to Edit ttime, sql->{0}, Exception {1} ", sqlCommand, ex.Message); }
+            }
+            
+        }
         public async Task<bool> CheckStartTime(int taskId)
         {
             List<Tasks> tasks = await App.DbHandle.GetTasksTable();
@@ -237,17 +262,24 @@ namespace ProjektPlanerAndRessourcenManager
         public void ChangeTaskStatus(int taskId, string newStatus)
         {
             int result = 0;
-            
+            List<Tasks> tasks = GetTasksTableSync();
+            string TaskDescription = "NONE";
+            string oldStatus = "";
+            foreach (var task in tasks)
+            {
+                if (task.Id == taskId){ TaskDescription = task.Description; oldStatus = task.Status; }  }
+            //string task;
+            //string sqlCmdOldStatus = $"SELECT Description FROM Tasks WHERE Id=\"" + taskId + "\"";
             string sqlCommand = $"UPDATE tasks SET Status=\"" + newStatus + "\" WHERE Id=\"" + taskId + "\"";
 
             try
             {
                 SyncInit();
                 //await connection.
-
+                //task = SQLiteConnection.Execute(sqlCmdOldStatus);
                 result = SQLiteConnection.Execute(sqlCommand);
                 //result = await SQLiteAsyncConnection.InsertAsync(new Tasks { StartDateTime = DateTime.Now.ToString() });
-                StatusMessage = string.Format("{0} new Project() added (Name: {1})", result, result);
+                StatusMessage = string.Format("Task´s: {0}, Status changed from: {1} to: {2}  ", TaskDescription, oldStatus, newStatus);
             }
             catch (Exception ex)
             {

@@ -118,6 +118,7 @@ public partial class MainPage : ContentPage
     }
     public async Task StartTask(int taskId)
     {
+        statusMessage.Text = "";
         tasks = await App.DbHandle.GetTasksTable();
         int _activeID;
         foreach (var task in tasks)
@@ -128,25 +129,34 @@ public partial class MainPage : ContentPage
                 App.DbHandle.ChangeTaskStatus(task.Id, "done");
                 //task.Status = "done"; // würde nur die lokale kopie der Daten aber nicht die Db Einträge ändern
                 System.Diagnostics.Debug.WriteLine($"if: task.Id = {task.Id}, taskId = {taskId}");
+                await App.DbHandle.EditTime(taskId, "end");
+                statusMessage.Text = App.DbHandle.StatusMessage;
             }
             else if (task.Status == "running" && task.Id == taskId) { 
                  App.DbHandle.ChangeTaskStatus(task.Id, "done");
                 System.Diagnostics.Debug.WriteLine($"else if: task.Id = {task.Id}, taskId = {taskId}");
+                await App.DbHandle.EditTime(taskId, "end");
+                statusMessage.Text = App.DbHandle.StatusMessage;
                 break;
             }
             else {
                 activeTaskId = task.Id;
                 App.DbHandle.ChangeTaskStatus(taskId, "running");
                 System.Diagnostics.Debug.WriteLine($"else: task.Id = {task.Id}, taskId = {taskId}");
-                if (task.StartDateTime == null) {await App.DbHandle.AddStartTimeToTask(taskId);
+                statusMessage.Text = App.DbHandle.StatusMessage;
+                if (task.StartDateTime == null) {await App.DbHandle.EditTime(taskId, "start");
                     System.Diagnostics.Debug.WriteLine($"else: task.StartDateTime = {task.StartDateTime}, taskId = {taskId},{task}");
+                    statusMessage.Text = App.DbHandle.StatusMessage;
                 }
             }
 
 
         }
+        
+
        
         
+
         FillTaskView();
 
 
@@ -236,10 +246,11 @@ public partial class MainPage : ContentPage
     }
     public async void AddNewTask(object sender, EventArgs args)
     {
-
+        statusMessage.Text = "";
+        
         ProjectTasksView.BackgroundColor = App.RndColor.RndRGBValue();
         projects = await App.DbHandle.GetProjectTable();
-
+        statusMessage.Text = App.DbHandle.StatusMessage;
         //if (projects.Count() == 0) { await Shell.Current.GoToAsync(nameof(ExamplePage)); }
         if (TaskDescription.Text != null)
         {
@@ -254,7 +265,7 @@ public partial class MainPage : ContentPage
 
             }
             await App.DbHandle.AddNewTask(TaskDescription.Text, ProjectId, ProjectName, "open", TagIDs);
-
+            statusMessage.Text = App.DbHandle.StatusMessage;
             FillTaskView();
 
             //await DisplayAlert(">+<", "erfolgreich", "ok");

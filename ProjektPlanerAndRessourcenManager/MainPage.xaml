@@ -6,7 +6,7 @@
     <ScrollView Margin="25" BackgroundColor="NavajoWhite" x:Name="MainView">
 
         <Grid RowDefinitions="15,200,*,*,*,*" ColumnDefinitions="*,*,*,*,*,*,*,*,*,*,*" RowSpacing="5" ColumnSpacing="5"><!--11 Columns-->
-                     
+            <Label x:Name="statusMessage" Grid.Column="5" Grid.ColumnSpan="6" Grid.Row="1"/>
             <Rectangle BackgroundColor="Plum" Grid.Column="0" />
             <Rectangle BackgroundColor="AntiqueWhite" Grid.Column="1" />
             <Rectangle BackgroundColor="Azure" Grid.Column="2" />

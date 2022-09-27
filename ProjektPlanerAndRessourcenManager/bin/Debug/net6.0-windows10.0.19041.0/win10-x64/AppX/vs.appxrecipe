@@ -29,13 +29,13 @@
     <AppXManifest Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2022-09-27T18:04:45.191</Modified>
+      <Modified>2022-09-27T18:40:28.749</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2022-09-27T18:04:44.617</Modified>
+      <Modified>2022-09-27T18:40:28.284</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\ProjektPlanerAndRessourcenManager.runtimeconfig.json">
       <PackagePath>ProjektPlanerAndRessourcenManager.runtimeconfig.json</PackagePath>
@@ -43,11 +43,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\ProjektPlanerAndRessourcenManager.dll">
       <PackagePath>ProjektPlanerAndRessourcenManager.dll</PackagePath>
-      <Modified>2022-09-27T18:04:43.427</Modified>
+      <Modified>2022-09-27T18:40:27.164</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>ProjektPlanerAndRessourcenManager.exe</PackagePath>
-      <Modified>2022-09-27T18:04:43.507</Modified>
+      <Modified>2022-09-27T18:40:27.240</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\NoNo\.nuget\packages\microsoft.netcore.app.runtime.win-x64\6.0.9\runtimes\win-x64\lib\net6.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -1095,7 +1095,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\ProjektPlanerAndRessourcenManager.deps.json">
       <PackagePath>ProjektPlanerAndRessourcenManager.deps.json</PackagePath>
-      <Modified>2022-09-27T18:04:45.029</Modified>
+      <Modified>2022-09-27T18:40:28.598</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files\dotnet\packs\Microsoft.Maui.Controls.Ref.win\6.0.486\ref\net6.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.pri">
       <PackagePath>Microsoft.Maui.Controls.Compatibility.pri</PackagePath>
@@ -1143,23 +1143,23 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\add_circle.scale-100.png">
       <PackagePath>add_circle.scale-100.png</PackagePath>
-      <Modified>2022-09-09T11:01:20.803</Modified>
+      <Modified>2022-09-27T18:25:13.647</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\add_circle.scale-125.png">
       <PackagePath>add_circle.scale-125.png</PackagePath>
-      <Modified>2022-09-09T11:01:20.805</Modified>
+      <Modified>2022-09-27T18:25:13.682</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\add_circle.scale-150.png">
       <PackagePath>add_circle.scale-150.png</PackagePath>
-      <Modified>2022-09-09T11:01:20.807</Modified>
+      <Modified>2022-09-27T18:25:13.686</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\add_circle.scale-200.png">
       <PackagePath>add_circle.scale-200.png</PackagePath>
-      <Modified>2022-09-09T11:01:20.813</Modified>
+      <Modified>2022-09-27T18:25:13.688</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\add_circle.scale-400.png">
       <PackagePath>add_circle.scale-400.png</PackagePath>
-      <Modified>2022-09-09T11:01:20.820</Modified>
+      <Modified>2022-09-27T18:25:13.711</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\add_circle_A.scale-100.png">
       <PackagePath>add_circle_A.scale-100.png</PackagePath>
@@ -1183,127 +1183,127 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
       <PackagePath>appicon.ico</PackagePath>
-      <Modified>2022-09-09T11:01:20.850</Modified>
+      <Modified>2022-09-27T18:25:13.864</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-100.png">
       <PackagePath>appiconLargeTile.scale-100.png</PackagePath>
-      <Modified>2022-09-09T11:01:21.031</Modified>
+      <Modified>2022-09-27T18:25:14.048</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-125.png">
       <PackagePath>appiconLargeTile.scale-125.png</PackagePath>
-      <Modified>2022-09-09T11:01:21.042</Modified>
+      <Modified>2022-09-27T18:25:14.059</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-150.png">
       <PackagePath>appiconLargeTile.scale-150.png</PackagePath>
-      <Modified>2022-09-09T11:01:21.052</Modified>
+      <Modified>2022-09-27T18:25:14.069</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-200.png">
       <PackagePath>appiconLargeTile.scale-200.png</PackagePath>
-      <Modified>2022-09-09T11:01:21.078</Modified>
+      <Modified>2022-09-27T18:25:14.085</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-400.png">
       <PackagePath>appiconLargeTile.scale-400.png</PackagePath>
-      <Modified>2022-09-09T11:01:21.142</Modified>
+      <Modified>2022-09-27T18:25:14.149</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-100.png">
       <PackagePath>appiconLogo.scale-100.png</PackagePath>
-      <Modified>2022-09-09T11:01:20.860</Modified>
+      <Modified>2022-09-27T18:25:13.873</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-125.png">
       <PackagePath>appiconLogo.scale-125.png</PackagePath>
-      <Modified>2022-09-09T11:01:20.863</Modified>
+      <Modified>2022-09-27T18:25:13.875</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-150.png">
       <PackagePath>appiconLogo.scale-150.png</PackagePath>
-      <Modified>2022-09-09T11:01:20.866</Modified>
+      <Modified>2022-09-27T18:25:13.891</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-200.png">
       <PackagePath>appiconLogo.scale-200.png</PackagePath>
-      <Modified>2022-09-09T11:01:20.870</Modified>
+      <Modified>2022-09-27T18:25:13.894</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-400.png">
       <PackagePath>appiconLogo.scale-400.png</PackagePath>
-      <Modified>2022-09-09T11:01:20.875</Modified>
+      <Modified>2022-09-27T18:25:13.898</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-100.png">
       <PackagePath>appiconMediumTile.scale-100.png</PackagePath>
-      <Modified>2022-09-09T11:01:20.928</Modified>
+      <Modified>2022-09-27T18:25:13.944</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-125.png">
       <PackagePath>appiconMediumTile.scale-125.png</PackagePath>
-      <Modified>2022-09-09T11:01:20.932</Modified>
+      <Modified>2022-09-27T18:25:13.949</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-150.png">
       <PackagePath>appiconMediumTile.scale-150.png</PackagePath>
-      <Modified>2022-09-09T11:01:20.939</Modified>
+      <Modified>2022-09-27T18:25:13.955</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-200.png">
       <PackagePath>appiconMediumTile.scale-200.png</PackagePath>
-      <Modified>2022-09-09T11:01:20.945</Modified>
+      <Modified>2022-09-27T18:25:13.963</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-400.png">
       <PackagePath>appiconMediumTile.scale-400.png</PackagePath>
-      <Modified>2022-09-09T11:01:20.961</Modified>
+      <Modified>2022-09-27T18:25:13.978</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-100.png">
       <PackagePath>appiconSmallTile.scale-100.png</PackagePath>
-      <Modified>2022-09-09T11:01:20.892</Modified>
+      <Modified>2022-09-27T18:25:13.923</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-125.png">
       <PackagePath>appiconSmallTile.scale-125.png</PackagePath>
-      <Modified>2022-09-09T11:01:20.910</Modified>
+      <Modified>2022-09-27T18:25:13.926</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-150.png">
       <PackagePath>appiconSmallTile.scale-150.png</PackagePath>
-      <Modified>2022-09-09T11:01:20.914</Modified>
+      <Modified>2022-09-27T18:25:13.929</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-200.png">
       <PackagePath>appiconSmallTile.scale-200.png</PackagePath>
-      <Modified>2022-09-09T11:01:20.918</Modified>
+      <Modified>2022-09-27T18:25:13.933</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-400.png">
       <PackagePath>appiconSmallTile.scale-400.png</PackagePath>
-      <Modified>2022-09-09T11:01:20.924</Modified>
+      <Modified>2022-09-27T18:25:13.940</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-100.png">
       <PackagePath>appiconStoreLogo.scale-100.png</PackagePath>
-      <Modified>2022-09-09T11:01:20.877</Modified>
+      <Modified>2022-09-27T18:25:13.907</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-125.png">
       <PackagePath>appiconStoreLogo.scale-125.png</PackagePath>
-      <Modified>2022-09-09T11:01:20.879</Modified>
+      <Modified>2022-09-27T18:25:13.910</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-150.png">
       <PackagePath>appiconStoreLogo.scale-150.png</PackagePath>
-      <Modified>2022-09-09T11:01:20.882</Modified>
+      <Modified>2022-09-27T18:25:13.913</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-200.png">
       <PackagePath>appiconStoreLogo.scale-200.png</PackagePath>
-      <Modified>2022-09-09T11:01:20.885</Modified>
+      <Modified>2022-09-27T18:25:13.916</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-400.png">
       <PackagePath>appiconStoreLogo.scale-400.png</PackagePath>
-      <Modified>2022-09-09T11:01:20.890</Modified>
+      <Modified>2022-09-27T18:25:13.920</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-100.png">
       <PackagePath>appiconWideTile.scale-100.png</PackagePath>
-      <Modified>2022-09-09T11:01:20.966</Modified>
+      <Modified>2022-09-27T18:25:13.984</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-125.png">
       <PackagePath>appiconWideTile.scale-125.png</PackagePath>
-      <Modified>2022-09-09T11:01:20.972</Modified>
+      <Modified>2022-09-27T18:25:13.990</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-150.png">
       <PackagePath>appiconWideTile.scale-150.png</PackagePath>
-      <Modified>2022-09-09T11:01:20.980</Modified>
+      <Modified>2022-09-27T18:25:13.998</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-200.png">
       <PackagePath>appiconWideTile.scale-200.png</PackagePath>
-      <Modified>2022-09-09T11:01:20.992</Modified>
+      <Modified>2022-09-27T18:25:14.009</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
       <PackagePath>appiconWideTile.scale-400.png</PackagePath>
-      <Modified>2022-09-09T11:01:21.022</Modified>
+      <Modified>2022-09-27T18:25:14.040</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\comet.scale-100.png">
       <PackagePath>comet.scale-100.png</PackagePath>
@@ -1311,143 +1311,143 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\date_range.scale-100.png">
       <PackagePath>date_range.scale-100.png</PackagePath>
-      <Modified>2022-09-09T11:01:20.803</Modified>
+      <Modified>2022-09-27T18:25:13.647</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\date_range.scale-125.png">
       <PackagePath>date_range.scale-125.png</PackagePath>
-      <Modified>2022-09-09T11:01:20.805</Modified>
+      <Modified>2022-09-27T18:25:13.680</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\date_range.scale-150.png">
       <PackagePath>date_range.scale-150.png</PackagePath>
-      <Modified>2022-09-09T11:01:20.806</Modified>
+      <Modified>2022-09-27T18:25:13.682</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\date_range.scale-200.png">
       <PackagePath>date_range.scale-200.png</PackagePath>
-      <Modified>2022-09-09T11:01:20.807</Modified>
+      <Modified>2022-09-27T18:25:13.683</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\date_range.scale-400.png">
       <PackagePath>date_range.scale-400.png</PackagePath>
-      <Modified>2022-09-09T11:01:20.814</Modified>
+      <Modified>2022-09-27T18:25:13.687</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
       <PackagePath>dotnet_bot.scale-100.png</PackagePath>
-      <Modified>2022-09-09T11:01:20.820</Modified>
+      <Modified>2022-09-27T18:25:13.667</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
       <PackagePath>dotnet_bot.scale-125.png</PackagePath>
-      <Modified>2022-09-09T11:01:20.836</Modified>
+      <Modified>2022-09-27T18:25:13.692</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
       <PackagePath>dotnet_bot.scale-150.png</PackagePath>
-      <Modified>2022-09-09T11:01:20.849</Modified>
+      <Modified>2022-09-27T18:25:13.718</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
       <PackagePath>dotnet_bot.scale-200.png</PackagePath>
-      <Modified>2022-09-09T11:01:20.873</Modified>
+      <Modified>2022-09-27T18:25:13.777</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>
-      <Modified>2022-09-09T11:01:20.927</Modified>
+      <Modified>2022-09-27T18:25:13.821</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\edit_note.scale-100.png">
       <PackagePath>edit_note.scale-100.png</PackagePath>
-      <Modified>2022-09-09T11:01:20.803</Modified>
+      <Modified>2022-09-27T18:25:13.647</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\edit_note.scale-125.png">
       <PackagePath>edit_note.scale-125.png</PackagePath>
-      <Modified>2022-09-09T11:01:20.806</Modified>
+      <Modified>2022-09-27T18:25:13.687</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\edit_note.scale-150.png">
       <PackagePath>edit_note.scale-150.png</PackagePath>
-      <Modified>2022-09-09T11:01:20.813</Modified>
+      <Modified>2022-09-27T18:25:13.705</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\edit_note.scale-200.png">
       <PackagePath>edit_note.scale-200.png</PackagePath>
-      <Modified>2022-09-09T11:01:20.815</Modified>
+      <Modified>2022-09-27T18:25:13.707</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\edit_note.scale-400.png">
       <PackagePath>edit_note.scale-400.png</PackagePath>
-      <Modified>2022-09-09T11:01:20.819</Modified>
+      <Modified>2022-09-27T18:25:13.710</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\hourglass_bottom.scale-100.png">
       <PackagePath>hourglass_bottom.scale-100.png</PackagePath>
-      <Modified>2022-09-09T11:01:20.803</Modified>
+      <Modified>2022-09-27T18:25:13.647</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\hourglass_bottom.scale-125.png">
       <PackagePath>hourglass_bottom.scale-125.png</PackagePath>
-      <Modified>2022-09-09T11:01:20.806</Modified>
+      <Modified>2022-09-27T18:25:13.680</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\hourglass_bottom.scale-150.png">
       <PackagePath>hourglass_bottom.scale-150.png</PackagePath>
-      <Modified>2022-09-09T11:01:20.813</Modified>
+      <Modified>2022-09-27T18:25:13.682</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\hourglass_bottom.scale-200.png">
       <PackagePath>hourglass_bottom.scale-200.png</PackagePath>
-      <Modified>2022-09-09T11:01:20.817</Modified>
+      <Modified>2022-09-27T18:25:13.684</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\hourglass_bottom.scale-400.png">
       <PackagePath>hourglass_bottom.scale-400.png</PackagePath>
-      <Modified>2022-09-09T11:01:20.826</Modified>
+      <Modified>2022-09-27T18:25:13.688</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\hourglass_disabled.scale-100.png">
       <PackagePath>hourglass_disabled.scale-100.png</PackagePath>
-      <Modified>2022-09-09T11:01:20.803</Modified>
+      <Modified>2022-09-27T18:25:13.647</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\hourglass_disabled.scale-125.png">
       <PackagePath>hourglass_disabled.scale-125.png</PackagePath>
-      <Modified>2022-09-09T11:01:20.806</Modified>
+      <Modified>2022-09-27T18:25:13.680</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\hourglass_disabled.scale-150.png">
       <PackagePath>hourglass_disabled.scale-150.png</PackagePath>
-      <Modified>2022-09-09T11:01:20.812</Modified>
+      <Modified>2022-09-27T18:25:13.682</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\hourglass_disabled.scale-200.png">
       <PackagePath>hourglass_disabled.scale-200.png</PackagePath>
-      <Modified>2022-09-09T11:01:20.816</Modified>
+      <Modified>2022-09-27T18:25:13.684</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\hourglass_disabled.scale-400.png">
       <PackagePath>hourglass_disabled.scale-400.png</PackagePath>
-      <Modified>2022-09-09T11:01:20.821</Modified>
+      <Modified>2022-09-27T18:25:13.688</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\hourglass_top.scale-100.png">
       <PackagePath>hourglass_top.scale-100.png</PackagePath>
-      <Modified>2022-09-09T11:01:20.803</Modified>
+      <Modified>2022-09-27T18:25:13.705</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\hourglass_top.scale-125.png">
       <PackagePath>hourglass_top.scale-125.png</PackagePath>
-      <Modified>2022-09-09T11:01:20.804</Modified>
+      <Modified>2022-09-27T18:25:13.707</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\hourglass_top.scale-150.png">
       <PackagePath>hourglass_top.scale-150.png</PackagePath>
-      <Modified>2022-09-09T11:01:20.806</Modified>
+      <Modified>2022-09-27T18:25:13.709</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\hourglass_top.scale-200.png">
       <PackagePath>hourglass_top.scale-200.png</PackagePath>
-      <Modified>2022-09-09T11:01:20.809</Modified>
+      <Modified>2022-09-27T18:25:13.711</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\hourglass_top.scale-400.png">
       <PackagePath>hourglass_top.scale-400.png</PackagePath>
-      <Modified>2022-09-09T11:01:20.817</Modified>
+      <Modified>2022-09-27T18:25:13.714</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\link.scale-100.png">
       <PackagePath>link.scale-100.png</PackagePath>
-      <Modified>2022-09-09T11:01:20.803</Modified>
+      <Modified>2022-09-27T18:25:13.647</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\link.scale-125.png">
       <PackagePath>link.scale-125.png</PackagePath>
-      <Modified>2022-09-09T11:01:20.809</Modified>
+      <Modified>2022-09-27T18:25:13.687</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\link.scale-150.png">
       <PackagePath>link.scale-150.png</PackagePath>
-      <Modified>2022-09-09T11:01:20.811</Modified>
+      <Modified>2022-09-27T18:25:13.705</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\link.scale-200.png">
       <PackagePath>link.scale-200.png</PackagePath>
-      <Modified>2022-09-09T11:01:20.812</Modified>
+      <Modified>2022-09-27T18:25:13.707</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\link.scale-400.png">
       <PackagePath>link.scale-400.png</PackagePath>
-      <Modified>2022-09-09T11:01:20.822</Modified>
+      <Modified>2022-09-27T18:25:13.711</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\moon.scale-100.png">
       <PackagePath>moon.scale-100.png</PackagePath>
@@ -1455,43 +1455,43 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\more_time.scale-100.png">
       <PackagePath>more_time.scale-100.png</PackagePath>
-      <Modified>2022-09-09T11:01:20.808</Modified>
+      <Modified>2022-09-27T18:25:13.647</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\more_time.scale-125.png">
       <PackagePath>more_time.scale-125.png</PackagePath>
-      <Modified>2022-09-09T11:01:20.811</Modified>
+      <Modified>2022-09-27T18:25:13.680</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\more_time.scale-150.png">
       <PackagePath>more_time.scale-150.png</PackagePath>
-      <Modified>2022-09-09T11:01:20.814</Modified>
+      <Modified>2022-09-27T18:25:13.682</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\more_time.scale-200.png">
       <PackagePath>more_time.scale-200.png</PackagePath>
-      <Modified>2022-09-09T11:01:20.822</Modified>
+      <Modified>2022-09-27T18:25:13.684</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\more_time.scale-400.png">
       <PackagePath>more_time.scale-400.png</PackagePath>
-      <Modified>2022-09-09T11:01:20.829</Modified>
+      <Modified>2022-09-27T18:25:13.689</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\not_started.scale-100.png">
       <PackagePath>not_started.scale-100.png</PackagePath>
-      <Modified>2022-09-09T11:01:20.803</Modified>
+      <Modified>2022-09-27T18:25:13.721</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\not_started.scale-125.png">
       <PackagePath>not_started.scale-125.png</PackagePath>
-      <Modified>2022-09-09T11:01:20.805</Modified>
+      <Modified>2022-09-27T18:25:13.746</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\not_started.scale-150.png">
       <PackagePath>not_started.scale-150.png</PackagePath>
-      <Modified>2022-09-09T11:01:20.809</Modified>
+      <Modified>2022-09-27T18:25:13.747</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\not_started.scale-200.png">
       <PackagePath>not_started.scale-200.png</PackagePath>
-      <Modified>2022-09-09T11:01:20.820</Modified>
+      <Modified>2022-09-27T18:25:13.771</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\not_started.scale-400.png">
       <PackagePath>not_started.scale-400.png</PackagePath>
-      <Modified>2022-09-09T11:01:20.827</Modified>
+      <Modified>2022-09-27T18:25:13.774</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\question.scale-100.png">
       <PackagePath>question.scale-100.png</PackagePath>

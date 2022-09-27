@@ -54,6 +54,9 @@ namespace ProjektPlanerAndRessourcenManager.DbModels
         public int FontColor { get; set; }
         public string StartDateTime { get; set; } ///DD.MM.YYYY HH:MM:SS
         public string EndDateTime { get; set; } ///DD.MM.YYYY HH:MM:SS
+        public string EditingHistory { get; set; } //ls json reinnschreiben?
+        public int HoursSpent { get; set; } //ls json reinnschreiben?
+        public int MinutesSpent { get; set; } //ls json reinnschreiben?
         public string TagIDs { get; set; } //1:n relation//speichert alle tags durch ihre Ids in der jeweiligen AUfgaabe, muss durch Programm geparst werden da Sqlite keine Array/Listen Datentypen zur verfügung stellt
     }
     public class Owner { }

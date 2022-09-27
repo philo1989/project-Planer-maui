@@ -18,7 +18,7 @@ public partial class ExamplePage : ContentPage
     {
         statusMessage.Text = "";
 
-        await App.DbHandle.AddStartTimeToTask(19); /*AddNewProject(newProject.Text, "to be changed/changeable");*/
+        await App.DbHandle.AddNewProject(newProject.Text, "to be changed/changeable");
         statusMessage.Text = App.DbHandle.StatusMessage;
     }
     public void OnGibPfad(object sender, EventArgs args)
