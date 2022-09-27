@@ -80,7 +80,7 @@ public partial class MainPage : ContentPage
             Text = ""
         };
 
-        ProjectTasksView.ItemsSource = tasks.OrderByDescending(t => t.Id).ToList();
+        //ProjectTasksView.ItemsSource = tasks.OrderByDescending(t => t.Id).ToList();
         //ProjectView.ItemsSource = projects./*OrderByDescending(t => t.Id).*/ToList();
 
         //if (testhd.Count() == tasks.Count)
@@ -92,7 +92,7 @@ public partial class MainPage : ContentPage
 
         foreach (var task in tasks.OrderByDescending(t => t.Id).ToList())
         {
-            FillTaskViewCounter++;
+            FillTaskViewCounter++;//Debug Variable 
 
             //Label tesLaabel = new Label();
 
@@ -100,23 +100,24 @@ public partial class MainPage : ContentPage
             //{
 
            
-            for (int i = 0; i < testhd.Children.Count; i++)
-            {
-                var tmplabel = new Label();
-                tmplabel = (Label)testhd.Children[i];
-                if (tmplabel.Text == task.Id.ToString()) { return; }
-                else {
-                    //test8 += testhd.Children[i].ToString();
+            //for (int i = 0; i < testhd.Children.Count; i++)
+            //{
+            //    var tmplabel = new Label();
+            //    tmplabel = (Label)testhd.Children[i];
+            //    if (tmplabel.Text == task.Id.ToString()) { return; }
+            //    else {
+            //        //DisplayAlert("To muttch", "added new task", "hrmpf");
+            //        //test8 += testhd.Children[i].ToString();
                     
-                }
-            }
+            //    }
+            //}
             
             label1 = new Label
             {
                 BackgroundColor = App.RndColor.TranslateDbColor(task.Color),
-                Text = $"[{task.ProjectName}][{task.Description}][{testhd.Count()}][{tasks.Count}][{FillTaskViewCounter}]",
+                Text = $"[{task.ProjectName}][{task.Description}]{task.Id}",/*[{testhd.Count()}][{tasks.Count}][{FillTaskViewCounter}]*/
 
-                VerticalOptions = LayoutOptions.Start
+                VerticalOptions = LayoutOptions.Center
             };
             label = new Label()
             {
