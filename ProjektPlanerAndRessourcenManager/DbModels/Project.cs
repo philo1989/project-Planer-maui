@@ -1,6 +1,8 @@
-﻿using SQLite;
+﻿
+using SQLite;
 using SQLiteNetExtensions;
 using SQLiteNetExtensions.Attributes;
+using System.Threading.Tasks;
 
 /*MAYBE IMPORTANT for Compiling to different platforms ?*/
 //using static Android.Media.Audiofx.DynamicsProcessing;
@@ -54,10 +56,41 @@ namespace ProjektPlanerAndRessourcenManager.DbModels
         public int FontColor { get; set; }
         public string StartDateTime { get; set; } ///DD.MM.YYYY HH:MM:SS
         public string EndDateTime { get; set; } ///DD.MM.YYYY HH:MM:SS
-        public string EditingHistory { get; set; } //ls json reinnschreiben?
-        public int HoursSpent { get; set; } //ls json reinnschreiben?
-        public int MinutesSpent { get; set; } //ls json reinnschreiben?
+        public int TimesOfBeeingStarted { get; set; } = 0;
+        public string EditingHistory { get; set; } 
+        //ls json reinnschreiben? oder selbst parsen so ala
+        //- > [inhalt]
+        /* for history.lenght i++
+         * histor[i] ist fgdfg //      
+         * */
+        public int TotalHours { get; set; } //ls json reinnschreiben?
+        public int TotalMinutes { get; set; } //ls json reinnschreiben?
+        public float TotalTimeInMinutes { get; set; } //ls json reinnschreiben?
         public string TagIDs { get; set; } //1:n relation//speichert alle tags durch ihre Ids in der jeweiligen AUfgaabe, muss durch Programm geparst werden da Sqlite keine Array/Listen Datentypen zur verfügung stellt
+    }
+    /*has subTasks as a bool flag in tthe tasks tttable aand also a int numberOFSubttasks,
+    then in an seperate subtask table store the tasks and give them the main task id as a foreign key,....*/
+    public class SubTasks
+    {
+
+    }
+    public class DeletedTasks
+    {
+
+    }
+    [Table("starts")]
+    public class Starts
+    {
+        [PrimaryKey, AutoIncrement]
+        public int Id { get; set; }
+        public int TasksID { get; set; }
+        public bool IsSubTask { get; set; } = false;
+        public string StartDateTime { get; set; } ///DD.MM.YYYY HH:MM:SS
+        public string EndDateTime { get; set; } ///DD.MM.YYYY HH:MM:SS
+        public int TotalHours { get; set; } //ls json reinnschreiben?
+        public int TotalMinutes { get; set; } //ls json reinnschreiben?
+        public float TotalTimeInMinutes { get; set; } //ls json reinnschreiben?
+
     }
     public class Owner { }
     public class Customer { }

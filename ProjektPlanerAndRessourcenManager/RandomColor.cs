@@ -38,7 +38,7 @@ namespace ProjektPlanerAndRessourcenManager
                 //string tmpcolorB = color.Substring(i, 2);
 
             }
-            string tmpcolorR = color.Substring(1,2);
+            string tmpcolorR = color.Substring(1, 2);
             string tmpcolorG = color.Substring(3, 2);
             string tmpcolorB = color.Substring(5, 2);
             Color colorResult = new Color(int.Parse(tmpcolorR, NumberStyles.HexNumber), int.Parse(tmpcolorG, NumberStyles.HexNumber), int.Parse(tmpcolorB, NumberStyles.HexNumber));
