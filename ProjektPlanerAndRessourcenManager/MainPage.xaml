@@ -71,7 +71,7 @@
                         
                     </HorizontalStackLayout>
                     <HorizontalStackLayout Grid.Row="2" Grid.Column="1">
-                    <ImageButton Source="add_circle.png" Clicked="AddNewTask"   MaximumHeightRequest="42" VerticalOptions="Start"/>
+                    <ImageButton Source="add_box.png" Clicked="AddNewTask"   MaximumHeightRequest="40" VerticalOptions="Start"/>
                     <!--BackgroundColor="#0aa000" BackgroundColor="#0aa00000"-->
                     <!--<ImageButton Source="not_started.png" Clicked="AddNewTask" BackgroundColor="#0aa00000" MaximumHeightRequest="48" VerticalOptions="Start"/>-->
                         <!--<ImageButton Source="not_started.png" BackgroundColor="Transparent" MaximumHeightRequest="48" VerticalOptions="Start"/>-->

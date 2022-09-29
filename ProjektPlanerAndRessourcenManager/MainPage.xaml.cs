@@ -95,7 +95,7 @@ public partial class MainPage : ContentPage
             startTaskImageButton = new ImageButton
             {
                 //BackgroundColor = App.RndColor.TranslateDbColor(task.Color),
-                Source = "not_started.png",
+                Source = "play_circle.png",
             };
             
                 //startTaskImageButton.Focused += (sender, e) => startTaskImageButton.BackgroundColor = App.RndColor.TranslateDbColor(task.Color);
@@ -104,14 +104,14 @@ public partial class MainPage : ContentPage
             editTaskImageButton = new ImageButton
             {
                 //BackgroundColor = App.RndColor.TranslateDbColor(task.Color),
-                Source = "edit_note.png",
+                Source = "edit.png",
             };
             //startTaskImageButton.Focused += (sender, e) => startTaskImageButton.BackgroundColor = App.RndColor.TranslateDbColor(task.Color);
             editTaskImageButton.Clicked += async (s, e) => await EditTask(task.Id);
 
             doneTaskImageButton = new ImageButton 
             { 
-                Source = "check_circle.png",
+                Source = "task_check.png",
             };
             doneTaskImageButton.Clicked += async (s, e) => await SetTaskToDone(task.Id);
             label1 = new Label
@@ -132,15 +132,15 @@ public partial class MainPage : ContentPage
                 Text = $"{task.Id}",
                 IsVisible = true,
             };
-            if (task.Status == "running") { startTaskImageButton.Source = "stop_circle_invert.png"; }
-            if (task.Status == "done") { startTaskImageButton.Source = "replay.png"; }
+            if (task.Status == "running") { startTaskImageButton.Source = "pause_circl.png"; }
+            if (task.Status == "done") { startTaskImageButton.Source = "replaya.png"; }
             
             horizontalTaskEntry.Children.Add(startTaskImageButton);
             horizontalTaskEntry.Children.Add(label1);
             horizontalTaskEntry.Children.Add(label);
             horizontalTaskEntry.Children.Add(editTaskImageButton);
-            if (task.Status == "done" || task.Status == "running") { horizontalTaskEntry.Children.Add(doneTaskImageButton); }
-
+            /*if (task.Status == "done" || task.Status == "running") {*/ horizontalTaskEntry.Children.Add(doneTaskImageButton);/* }
+*/
             testhd.Children.Add(horizontalTaskEntry);
         }
     }
@@ -157,9 +157,11 @@ public partial class MainPage : ContentPage
             {
                 AAAAHHHH();
                 App.DbHandle.ChangeTaskStatus(task.Id, "done");
+                App.DbHandle.ChangeTaskStatus(taskId, "running");
                 //task.Status = "done"; // würde nur die lokale kopie der Daten aber nicht die Db Einträge ändern
                 System.Diagnostics.Debug.WriteLine($"if: task.Id = {task.Id}, taskId = {taskId}");
-                await App.DbHandle.EditTime(taskId, "end");
+                await App.DbHandle.EditTime(task.Id, "end");
+                await App.DbHandle.EditTime(taskId, "start");
                 statusMessage.Text = App.DbHandle.StatusMessage;
             }
             else if (task.Status == "running" && task.Id == taskId) { 
@@ -174,11 +176,11 @@ public partial class MainPage : ContentPage
                 App.DbHandle.ChangeTaskStatus(taskId, "running");
                 System.Diagnostics.Debug.WriteLine($"else: task.Id = {task.Id}, taskId = {taskId}");
                 statusMessage.Text = App.DbHandle.StatusMessage;
-                if (string.IsNullOrEmpty(task.StartDateTime)&&task.Id == taskId) {
+                //if (string.IsNullOrEmpty(task.StartDateTime)&&task.Id == taskId) {
                     await App.DbHandle.EditTime(taskId, "start");
                     System.Diagnostics.Debug.WriteLine($"else: task.StartDateTime = {task.StartDateTime}, taskId = {taskId},{task}");
                     statusMessage.Text = App.DbHandle.StatusMessage;
-                }
+                //}
             }
 
 
