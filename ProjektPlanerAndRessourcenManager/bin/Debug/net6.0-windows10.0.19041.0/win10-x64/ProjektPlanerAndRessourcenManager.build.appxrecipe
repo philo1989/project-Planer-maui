@@ -886,6 +886,9 @@
     <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\add_circle_A.scale-400.png">
       <PackagePath>add_circle_A.scale-400.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\all_inclusive__wght400_opsz.scale-100.png">
+      <PackagePath>all_inclusive__wght400_opsz.scale-100.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
       <PackagePath>appicon.ico</PackagePath>
     </AppxPackagedFile>
@@ -978,6 +981,39 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
       <PackagePath>appiconWideTile.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\ceck_small__wght400_0_opsz.scale-100.png">
+      <PackagePath>ceck_small__wght400_0_opsz.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\check_circle.scale-100.png">
+      <PackagePath>check_circle.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\check_circle.scale-125.png">
+      <PackagePath>check_circle.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\check_circle.scale-150.png">
+      <PackagePath>check_circle.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\check_circle.scale-200.png">
+      <PackagePath>check_circle.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\check_circle.scale-400.png">
+      <PackagePath>check_circle.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\check_small_wght400_opsz.scale-100.png">
+      <PackagePath>check_small_wght400_opsz.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\check_small_wght400_opsz.scale-125.png">
+      <PackagePath>check_small_wght400_opsz.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\check_small_wght400_opsz.scale-150.png">
+      <PackagePath>check_small_wght400_opsz.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\check_small_wght400_opsz.scale-200.png">
+      <PackagePath>check_small_wght400_opsz.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\check_small_wght400_opsz.scale-400.png">
+      <PackagePath>check_small_wght400_opsz.scale-400.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\comet.scale-100.png">
       <PackagePath>comet.scale-100.png</PackagePath>
@@ -1120,11 +1156,116 @@
     <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\not_started.scale-400.png">
       <PackagePath>not_started.scale-400.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\not_started_invert.scale-100.png">
+      <PackagePath>not_started_invert.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\not_started_invert.scale-125.png">
+      <PackagePath>not_started_invert.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\not_started_invert.scale-150.png">
+      <PackagePath>not_started_invert.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\not_started_invert.scale-200.png">
+      <PackagePath>not_started_invert.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\not_started_invert.scale-400.png">
+      <PackagePath>not_started_invert.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\outline_all_inclusive_black_24dp.scale-100.png">
+      <PackagePath>outline_all_inclusive_black_24dp.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\outline_check_circle_outline_black_24dp.scale-100.png">
+      <PackagePath>outline_check_circle_outline_black_24dp.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\outline_remove_done_black_24dp.scale-100.png">
+      <PackagePath>outline_remove_done_black_24dp.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\pause_circle_invert.scale-100.png">
+      <PackagePath>pause_circle_invert.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\pause_circle_invert.scale-125.png">
+      <PackagePath>pause_circle_invert.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\pause_circle_invert.scale-150.png">
+      <PackagePath>pause_circle_invert.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\pause_circle_invert.scale-200.png">
+      <PackagePath>pause_circle_invert.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\pause_circle_invert.scale-400.png">
+      <PackagePath>pause_circle_invert.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\pause_circle_wght400_opsz48a.scale-100.png">
+      <PackagePath>pause_circle_wght400_opsz48a.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\play_arrow_wght400_opsz48l.scale-100.png">
+      <PackagePath>play_arrow_wght400_opsz48l.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\play_arrow_wght400_opsz48l.scale-125.png">
+      <PackagePath>play_arrow_wght400_opsz48l.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\play_arrow_wght400_opsz48l.scale-150.png">
+      <PackagePath>play_arrow_wght400_opsz48l.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\play_arrow_wght400_opsz48l.scale-200.png">
+      <PackagePath>play_arrow_wght400_opsz48l.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\play_arrow_wght400_opsz48l.scale-400.png">
+      <PackagePath>play_arrow_wght400_opsz48l.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\play_arrow_wght400__opsz48l.scale-100.png">
+      <PackagePath>play_arrow_wght400__opsz48l.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\play_circle_wght400_opsz48l.scale-100.png">
+      <PackagePath>play_circle_wght400_opsz48l.scale-100.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\question.scale-100.png">
       <PackagePath>question.scale-100.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\replay.scale-100.png">
+      <PackagePath>replay.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\replay_circle_filled0_wght400_opsz48l.scale-100.png">
+      <PackagePath>replay_circle_filled0_wght400_opsz48l.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\replay_circle_invert.scale-100.png">
+      <PackagePath>replay_circle_invert.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\replay_wght400_opsz48l.scale-100.png">
+      <PackagePath>replay_wght400_opsz48l.scale-100.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\starfield.scale-100.png">
       <PackagePath>starfield.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\stop_circle.scale-100.png">
+      <PackagePath>stop_circle.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\stop_circle.scale-125.png">
+      <PackagePath>stop_circle.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\stop_circle.scale-150.png">
+      <PackagePath>stop_circle.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\stop_circle.scale-200.png">
+      <PackagePath>stop_circle.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\stop_circle.scale-400.png">
+      <PackagePath>stop_circle.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\stop_circle_invert.scale-100.png">
+      <PackagePath>stop_circle_invert.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\stop_circle_invert.scale-125.png">
+      <PackagePath>stop_circle_invert.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\stop_circle_invert.scale-150.png">
+      <PackagePath>stop_circle_invert.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\stop_circle_invert.scale-200.png">
+      <PackagePath>stop_circle_invert.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\stop_circle_invert.scale-400.png">
+      <PackagePath>stop_circle_invert.scale-400.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="J:\NoNo\source\project-Planer-maui\ProjektPlanerAndRessourcenManager\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\sun.scale-100.png">
       <PackagePath>sun.scale-100.png</PackagePath>

@@ -59,7 +59,8 @@ public partial class MainPage : ContentPage
             }
             projectPicker.ItemsSource = projectNames;
 
-            projectPicker.SelectedItem = 0; /*projectNames[0]*/
+            //projectPicker.SelectedItem = projectNames[0]/*0*/; 
+            projectPicker.SelectedIndex = 0; 
             tagPicker.SelectedIndex = 0;
             toggleRecurringTask.SelectedIndex = 0;
         }
@@ -80,7 +81,7 @@ public partial class MainPage : ContentPage
         ImageButton cancelTaskImageButton;
         ImageButton doneTaskImageButton;
         // change status done to paused and add the done button if task is set to paused/stoped
-
+        
         foreach (var task in tasks.OrderByDescending(t => t.Id).ToList())
         {
             FillTaskViewCounter++;//Debug Variable 
@@ -90,13 +91,14 @@ public partial class MainPage : ContentPage
                 Padding = new Thickness(5, 0, 5, 0),
                 BackgroundColor = App.RndColor.TranslateDbColor(task.Color),
             };
-
+            
             startTaskImageButton = new ImageButton
             {
                 //BackgroundColor = App.RndColor.TranslateDbColor(task.Color),
                 Source = "not_started.png",
             };
-            //startTaskImageButton.Focused += (sender, e) => startTaskImageButton.BackgroundColor = App.RndColor.TranslateDbColor(task.Color);
+            
+                //startTaskImageButton.Focused += (sender, e) => startTaskImageButton.BackgroundColor = App.RndColor.TranslateDbColor(task.Color);
             startTaskImageButton.Clicked += async (s, e) => await StartTask(task.Id);
 
             editTaskImageButton = new ImageButton
@@ -107,6 +109,11 @@ public partial class MainPage : ContentPage
             //startTaskImageButton.Focused += (sender, e) => startTaskImageButton.BackgroundColor = App.RndColor.TranslateDbColor(task.Color);
             editTaskImageButton.Clicked += async (s, e) => await EditTask(task.Id);
 
+            doneTaskImageButton = new ImageButton 
+            { 
+                Source = "check_circle.png",
+            };
+            doneTaskImageButton.Clicked += async (s, e) => await SetTaskToDone(task.Id);
             label1 = new Label
             {
                 MinimumWidthRequest = 400,
@@ -125,19 +132,20 @@ public partial class MainPage : ContentPage
                 Text = $"{task.Id}",
                 IsVisible = true,
             };
-
+            if (task.Status == "running") { startTaskImageButton.Source = "stop_circle_invert.png"; }
+            if (task.Status == "done") { startTaskImageButton.Source = "replay.png"; }
+            
             horizontalTaskEntry.Children.Add(startTaskImageButton);
             horizontalTaskEntry.Children.Add(label1);
             horizontalTaskEntry.Children.Add(label);
             horizontalTaskEntry.Children.Add(editTaskImageButton);
+            if (task.Status == "done" || task.Status == "running") { horizontalTaskEntry.Children.Add(doneTaskImageButton); }
 
             testhd.Children.Add(horizontalTaskEntry);
         }
     }
-    public async Task EditTask(int taskId)
-    {
-        
-    }
+    public async Task EditTask(int taskId)   { }
+    public async Task SetTaskToDone(int taskId)   { }
     public async Task StartTask(int taskId)
     {
         statusMessage.Text = "";
@@ -280,11 +288,13 @@ public partial class MainPage : ContentPage
                     ProjectId = project.Id;
                     ProjectName = project.Name;
                     TagIDs = tagPicker.SelectedIndex.ToString();
+                    await App.DbHandle.AddNewTask(TaskDescription.Text, ProjectId, ProjectName, "open", TagIDs);
+                    statusMessage.Text = App.DbHandle.StatusMessage;
                 }
 
             }
-            await App.DbHandle.AddNewTask(TaskDescription.Text, ProjectId, ProjectName, "open", TagIDs);
-            statusMessage.Text = App.DbHandle.StatusMessage;
+            
+            
             FillTaskView();
 
             //await DisplayAlert(">+<", "erfolgreich", "ok");

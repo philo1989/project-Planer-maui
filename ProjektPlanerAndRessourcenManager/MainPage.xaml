@@ -71,8 +71,9 @@
                         
                     </HorizontalStackLayout>
                     <HorizontalStackLayout Grid.Row="2" Grid.Column="1">
-                        <ImageButton Source="not_started.png" Clicked="AddNewTask" BackgroundColor="#0aa000" MaximumHeightRequest="48" VerticalOptions="Start"/>
-                        <!--<ImageButton Source="not_started.png" Clicked="AddNewTask" BackgroundColor="#0aa00000" MaximumHeightRequest="48" VerticalOptions="Start"/>-->
+                    <ImageButton Source="add_circle.png" Clicked="AddNewTask"   MaximumHeightRequest="42" VerticalOptions="Start"/>
+                    <!--BackgroundColor="#0aa000" BackgroundColor="#0aa00000"-->
+                    <!--<ImageButton Source="not_started.png" Clicked="AddNewTask" BackgroundColor="#0aa00000" MaximumHeightRequest="48" VerticalOptions="Start"/>-->
                         <!--<ImageButton Source="not_started.png" BackgroundColor="Transparent" MaximumHeightRequest="48" VerticalOptions="Start"/>-->
                         <Editor x:Name="TaskDescription" Placeholder="TaskDescription" PlaceholderColor="BlueViolet" MaximumHeightRequest="36"></Editor>
                     
@@ -109,7 +110,7 @@
                     </HorizontalStackLayout>
                 </Grid>
                 <!--End Add New Task-->
-            <TableView Intent="Form" Grid.Column="5" Grid.ColumnSpan="6" Grid.Row="2" Grid.RowSpan="4" VerticalOptions="StartAndExpand">
+            <TableView Intent="Form" Grid.Column="5" Grid.ColumnSpan="6" Grid.Row="2" Grid.RowSpan="4" VerticalOptions="StartAndExpand" MinimumHeightRequest="600">
                 <TableRoot>
                     <!--<TableSection Title="Enter New Task" TextColor="FloralWhite">
                         <ViewCell>
