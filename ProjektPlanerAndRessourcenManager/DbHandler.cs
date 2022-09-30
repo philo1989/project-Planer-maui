@@ -23,7 +23,7 @@ namespace ProjektPlanerAndRessourcenManager
             if (SQLiteAsyncConnection != null) return;
 
             SQLiteAsyncConnection = new SQLiteAsyncConnection(_dbPath);
-            await SQLiteAsyncConnection.CreateTablesAsync<Project, Tasks, TimeManagmentProtocol, Starts>();
+            await SQLiteAsyncConnection.CreateTablesAsync<Project, Tasks, TimeManagmentProtocol, Starts, DoneTasks>();
 
         }
         private void SyncInit()
@@ -92,6 +92,9 @@ namespace ProjektPlanerAndRessourcenManager
 
             return new List<Project>();
         }
+
+
+
         //public async Task<int> GetProjectId(string ProjectName)
         //{
         //    try
@@ -134,6 +137,20 @@ namespace ProjektPlanerAndRessourcenManager
 
             return new List<Tasks>();
         }
+        public List<DoneTasks> GetDoneTasksTableSync()
+        {
+            try
+            {
+                SyncInit();
+                return SQLiteConnection.Table<DoneTasks>().ToList();
+            }
+            catch (Exception ex)
+            {
+                StatusMessage = string.Format("Failed to retrieve data. {0}", ex.Message);
+            }
+
+            return new List<DoneTasks>();
+        }
 
         //public async Task<bool> CheckForExistingProjects()//And Build List Dough WAYYYYYNNNEEE
         //{
@@ -146,7 +163,49 @@ namespace ProjektPlanerAndRessourcenManager
         //    return true;
 
         //}
+        public async void MoveTaskToDoneTasksTable(int taskId)
+        {
+            int result = 0;
+            List<Tasks> tasks = GetTasksTableSync();
+            foreach (Tasks task in tasks)
+            {
+                if (taskId == task.Id)
+                {
+                    try
+                    {
+                        await Init();
+                        //if (string.IsNullOrEmpty(projectName)) throw new Exception("Valid Name required... ToDo: Add Allowed Charaacters");
+                        //string sqlCommandEnd = "UPDATE tasks SET EndDateTime=\"" + DateTime.Now + "\" WHERE Id=\"" + taskId + "\"";
+                        string sqlCommnd = "DELETE FROM tasks WHERE Id=\"" + taskId + "\"";
 
+                        result = await SQLiteAsyncConnection.InsertAsync(new DoneTasks
+                        {
+                            Id = task.Id,
+                            ProjectID = task.ProjectID,
+                            ProjectName = task.ProjectName,
+                            Status = "IsDone :)",
+                            Description = task.Description,
+                            IsDone = true,
+                            Color = task.Color,
+                            TimesOfBeeingStarted = task.TimesOfBeeingStarted,
+                            EditingHistory = task.EditingHistory,
+                            TotalHours = task.TotalHours,
+                            TotalMinutes = task.TotalMinutes,
+                            TotalTimeInMinutes = task.TotalTimeInMinutes,
+                            TagIDs = task.TagIDs
+                        });
+                        result = await SQLiteAsyncConnection.ExecuteAsync(sqlCommnd);
+
+                        StatusMessage = string.Format("{0} new Time() added (Name: {1})", result, sqlCommnd);
+                    }
+                    catch (Exception ex)
+                    {
+                        StatusMessage = string.Format("Failed to add {0}. Error: {1}", taskId, ex.Message);
+                    }
+                }
+            }
+
+        }
         public async Task AddNewTask(string TaskDescription, int ProjectID, string ProjectName, string status, string tagIDs)
         {
             int result = 0;
@@ -155,7 +214,7 @@ namespace ProjektPlanerAndRessourcenManager
             try
             {
                 await Init();
-                if (string.IsNullOrEmpty(TaskDescription)) throw new Exception("Valid Name required... ToDo: Add Allowed Charaacters");
+                if (string.IsNullOrEmpty(TaskDescription)) throw new Exception("Valid Name required... ToDo: Add Allowed Characters");
 
                 List<Project> projects = await SQLiteAsyncConnection.Table<Project>().ToListAsync();
                 foreach (Project project in projects)
@@ -191,7 +250,8 @@ namespace ProjektPlanerAndRessourcenManager
             }
 
             return new List<Tasks>();
-        }
+        } 
+        
         public DateTime ToUtcDateTime()
         {
             return DateTime.UtcNow;
@@ -205,23 +265,27 @@ namespace ProjektPlanerAndRessourcenManager
         public async Task EditTime(int taskId, string kind)
         {
             int result = 0;
-            
 
-            if (kind == "end") {
+
+            if (kind == "end")
+            {
                 string sqlCommandEnd = "UPDATE tasks SET EndDateTime=\"" + DateTime.Now + "\" WHERE Id=\"" + taskId + "\"";
-                try {
-                   
+                try
+                {
+
                     await Init();
                     result = await SQLiteAsyncConnection.ExecuteAsync(sqlCommandEnd);
                     CalculateAndWriteTimeEffort(taskId);
                 }
                 catch (Exception ex) { StatusMessage = string.Format("Failed to Set EndDateTime, sql->{0}, Exception {1} ", sqlCommandEnd, ex.Message); }
             }
-            
-            if (kind == "start") {
+
+            if (kind == "start")
+            {
                 string sqlCommandStart = "UPDATE tasks SET StartDateTime=\"" + DateTime.Now + "\" WHERE Id=\"" + taskId + "\"";
-                try {
-                   
+                try
+                {
+
                     await Init();
                     result = await SQLiteAsyncConnection.ExecuteAsync(sqlCommandStart);
                 }
@@ -300,7 +364,7 @@ namespace ProjektPlanerAndRessourcenManager
             string oldStatus = "";
             foreach (Tasks task in tasks)
             {
-                if (task.Id == taskId) { TaskDescription = task.Description; oldStatus = task.Status; } 
+                if (task.Id == taskId) { TaskDescription = task.Description; oldStatus = task.Status; }
             }
             //string task;
             //string sqlCmdOldStatus = $"SELECT Description FROM Tasks WHERE Id=\"" + taskId + "\"";

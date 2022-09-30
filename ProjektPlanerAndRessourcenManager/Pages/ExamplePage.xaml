@@ -94,6 +94,9 @@
 
             </VerticalStackLayout>
         </Grid>
-       
+        <StackLayout Grid.Column="1" Grid.Row="2" Grid.ColumnSpan="2" VerticalOptions="Center">
+            <Label  Text="dotnet publish -f net6.0-windows10.0.19041.0 -c Release -p:WindowsPackageType=None" BackgroundColor="Honeydew"   VerticalOptions="Center"/>
+            <Label  Text="J:\NoNo\source\repos\ProjektPlanerAndRessourcenManager\bin\Release\net6.0-windows10.0.19041.0\win10-x64" BackgroundColor="MediumVioletRed"/>
+        </StackLayout>
     </VerticalStackLayout>
 </ContentPage>
